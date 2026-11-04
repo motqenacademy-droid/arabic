@@ -515,9 +515,5 @@ const DICT_RAW = [
     /(?:و|ف)?بالتالي/, null],
 ];
 
-const DICT = DICT_RAW.map((r, i) => ({
-  id: i,
-  level: r[0], cat: r[1], arn: r[2], fus: r[3], src: r[4], note: r[5],
-  bad: r[6], good: r[7], re: r[8].source,
-  shahid: r[9] ? { text: r[9][0], ref: r[9][1], era: r[9][2] } : null,
-}));
+/* إضافات المعجم من ملفات js/content/dict-*.js تُدفع إلى هذه المصفوفة بصيغة الكائنات */
+const DICT_EXTRA = [];

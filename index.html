@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>الذائقة العربية</title>
-  <meta name="description" content="موقع تعليمي متكامل لتهذيب الذائقة العربية وتقويم اللسان، على منهج كتاب «العرنجية» في نبذ التراكيب الدخيلة، بنصوص العصر النبوي والراشدي والأموي والعباسي.">
+  <meta name="description" content="منصة تعليمية متكاملة لتهذيب الذائقة العربية وتقويم اللسان، على منهج كتاب «العرنجية»، بنصوص العصر الجاهلي والنبوي والراشدي والأموي والعباسي، مع حسابات للطلاب ولوحة متابعة للمعلّم.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
         <span class="brand-mark" aria-hidden="true">ض</span>
         <span>الذائقة العربية</span>
       </a>
-      <button class="nav-toggle" aria-label="القائمة" aria-expanded="false">☰</button>
+      <button class="header-btn nav-toggle" aria-label="القائمة" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="التنقل الرئيس">
         <a href="#home" data-nav="home">الرئيسة</a>
         <a href="#path" data-nav="path">رحلة التعلّم</a>
@@ -25,8 +25,10 @@
         <a href="#texts" data-nav="texts">المختارات</a>
         <a href="#practice" data-nav="practice">التدريب</a>
         <a href="#checker" data-nav="checker">المِحَكّ</a>
+        <a href="#teacher" data-nav="teacher" id="nav-teacher" hidden>لوحة المعلّم</a>
       </nav>
-      <button class="theme-toggle" aria-label="تبديل الوضع الليلي" title="الوضع الليلي"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="header-btn account-btn" href="#account" id="account-btn"><span class="avatar" aria-hidden="true">ط</span><span class="acc-name">حسابي</span></a>
+      <button class="header-btn theme-toggle" aria-label="تبديل الوضع الليلي" title="الوضع الليلي"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
     </div>
   </header>
 
@@ -35,16 +37,20 @@
     <div class="page" data-page="home">
       <section class="hero">
         <div class="wrap">
-          <p class="eyebrow">على منهج كتاب «العرنجية»</p>
-          <h1>ردَّ لسانَك إلى<br><span class="accent">بيانه الأول</span></h1>
-          <p class="lead">
-            نكتب اليوم بكلماتٍ عربية، لكنّ كثيراً منها مرصوفٌ على قوالب أعجمية مترجمة.
-            هنا رحلةٌ من ست مراحل تتعلّم فيها أن تعرف «العرنجية» إذا رأيتها، وأن تستبدل بها ما قالته العرب في
-            <strong>العصر النبوي والراشدي والأموي والعباسي</strong>، حتى تصير <strong>ذائقاً</strong>.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#path" id="home-cta">ابدأ رحلة التعلّم</a>
-            <a class="btn" href="#practice">تدرّب تدريباً حرّاً</a>
+          <div class="arch">
+            <div class="arch-star" aria-hidden="true">ض</div>
+            <p class="eyebrow">على منهج كتاب «العرنجية»</p>
+            <h1>ردَّ لسانَك إلى <span class="accent">بيانه الأول</span></h1>
+            <p class="lead">
+              نكتب اليوم بكلماتٍ عربية، لكنّ كثيراً منها مرصوفٌ على قوالب أعجمية مترجمة.
+              هنا رحلةٌ من سبع مراحل تتعلّم فيها أن تعرف «العرنجية» إذا رأيتها، وأن تستبدل بها ما قالته العرب
+              من <strong>العصر الجاهلي</strong> إلى <strong>العصر العباسي</strong>، حتى تصير <strong>ذائقاً</strong>.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#path" id="home-cta">ابدأ رحلة التعلّم</a>
+              <a class="btn gold" href="#account" id="home-acc">أنشئ حساباً</a>
+              <a class="btn" href="#practice">تدرّب تدريباً حرّاً</a>
+            </div>
           </div>
 
           <div class="stats" id="home-stats"></div>
@@ -59,6 +65,7 @@
               </figcaption>
               <blockquote id="daily-text"></blockquote>
               <p class="daily-meta" id="daily-meta"></p>
+              <div class="card-actions" id="daily-actions"></div>
             </figure>
           </div>
         </div>
@@ -79,8 +86,8 @@
           </p>
           <p class="note">
             اتبع الموقع منهج الكتاب وفكرته، وصاغ الأمثلة على طريقته، واختار الشواهد والنصوص كلها من
-            القرآن والحديث وكلام العرب في العصور الأربعة دون غيرها. وما في نسبته خلاف وُسم بـ«يُروى».
-            وننصح بقراءة الكتاب نفسه والرجوع إلى «جداول العرنجية» فيه.
+            كلام العرب في العصر الجاهلي والقرآن والحديث وكلام العصور الراشدي والأموي والعباسي.
+            وما في نسبته خلاف وُسم بـ«يُروى» أو «يُنسب إليه». وننصح بقراءة الكتاب نفسه والرجوع إلى «جداول العرنجية» فيه.
           </p>
         </div>
       </section>
@@ -99,20 +106,16 @@
       <section class="section">
         <div class="wrap">
           <h2>رحلة التعلّم</h2>
-          <p class="section-lead">ست مراحل متدرّجة من التنبّه إلى التذوّق. في كل مرحلة درسٌ، وتراكيب تحفظها، ونصوصٌ تقرؤها، واختبارٌ تجتازه بنسبة ٧٥٪ لتنفتح المرحلة التالية.</p>
+          <p class="section-lead">سبع مراحل متدرّجة من التنبّه إلى ديوان العرب الأول. في كل مرحلة درسٌ، وتراكيب تحفظها، ونصوصٌ تقرؤها، واختبارٌ تجتازه بنسبة ٧٥٪ لتنفتح المرحلة التالية.</p>
           <div class="path" id="path-list"></div>
-          <div class="path-foot">
-            <button class="btn small-btn" id="reset-progress">مسح التقدّم والبدء من جديد</button>
-          </div>
+          <div class="path-foot"><button class="btn small-btn" id="reset-progress">مسح التقدّم والبدء من جديد</button></div>
         </div>
       </section>
     </div>
 
-    <!-- ================= صفحة المرحلة ================= -->
+    <!-- ================= صفحة المرحلة / الشهادة ================= -->
     <div class="page" data-page="level" hidden>
-      <section class="section">
-        <div class="wrap" id="level-view"></div>
-      </section>
+      <section class="section"><div class="wrap" id="level-view"></div></section>
     </div>
 
     <!-- ================= المعجم ================= -->
@@ -120,13 +123,14 @@
       <section class="section">
         <div class="wrap">
           <h2>معجم العرنجية</h2>
-          <p class="section-lead">التركيب الدخيل، وأصله الأعجمي، ونظيره الفصيح، وشاهده من كلام العصور الأولى.</p>
+          <p class="section-lead">التركيب الدخيل، وأصله الأعجمي، ونظيره الفصيح، وشاهده من كلام العرب. اضغط «استزادة» للشرح الموسّع.</p>
           <div class="toolbar">
             <input type="search" id="dict-search" placeholder="ابحث في المعجم… (مثلاً: دور، تمّ، كأن)" aria-label="ابحث في المعجم">
             <select id="dict-cat" aria-label="الباب"></select>
             <span class="count" id="dict-count"></span>
           </div>
           <div class="dict-grid" id="dict-list"></div>
+          <div class="pager"><button class="btn" id="dict-more" hidden>اعرض المزيد</button></div>
         </div>
       </section>
     </div>
@@ -136,20 +140,15 @@
       <section class="section">
         <div class="wrap">
           <h2>المختارات</h2>
-          <p class="section-lead">نصوصٌ تُقرأ بصوتٍ مسموع وتُحفظ، فهي مادّة الذائقة. ولكلّ نصٍّ لمسةُ تذوّق.</p>
+          <p class="section-lead">نصوصٌ تُقرأ بصوتٍ مسموع وتُحفظ، فهي مادّة الذائقة. الآيات بتلاوة الشيخ محمود خليل الحصري، ولكلّ نصٍّ لمسةُ تذوّق وشرحٌ للاستزادة.</p>
           <div class="toolbar">
             <input type="search" id="texts-search" placeholder="ابحث في النصوص أو القائلين… (مثلاً: المتنبي، كأنّ)" aria-label="ابحث في النصوص">
             <select id="texts-kind" aria-label="النوع"></select>
             <span class="count" id="texts-count"></span>
           </div>
-          <div class="filters" id="era-filters">
-            <button class="chip active" data-era="all">الكلّ</button>
-            <button class="chip" data-era="nabawi">العصر النبوي</button>
-            <button class="chip" data-era="rashidi">العصر الراشدي</button>
-            <button class="chip" data-era="umawi">العصر الأموي</button>
-            <button class="chip" data-era="abbasi">العصر العباسي</button>
-          </div>
+          <div class="filters" id="era-filters"></div>
           <div class="texts-grid" id="texts-list"></div>
+          <div class="pager"><button class="btn" id="texts-more" hidden>اعرض المزيد</button></div>
         </div>
       </section>
     </div>
@@ -161,12 +160,8 @@
           <h2>التدريب الحرّ</h2>
           <p class="section-lead">أسئلة لا تنتهي من البنك كله. اختر نوع السؤال ومرحلته، وتدرّب ما شئت.</p>
           <div class="practice-controls card">
-            <label>نوع السؤال
-              <select id="pr-type"></select>
-            </label>
-            <label>المرحلة
-              <select id="pr-level"></select>
-            </label>
+            <label>نوع السؤال <select id="pr-type"></select></label>
+            <label>المرحلة <select id="pr-level"></select></label>
             <div class="streak">صحيح: <strong id="pr-ok">٠</strong>، خطأ: <strong id="pr-no">٠</strong>، سلسلة: <strong id="pr-streak">٠</strong></div>
           </div>
           <div id="practice-quiz"></div>
@@ -190,18 +185,51 @@
         </div>
       </section>
     </div>
+
+    <!-- ================= الحساب ================= -->
+    <div class="page" data-page="account" hidden>
+      <section class="section"><div class="wrap" id="account-view"></div></section>
+    </div>
+
+    <!-- ================= لوحة المعلم ================= -->
+    <div class="page" data-page="teacher" hidden>
+      <section class="section"><div class="wrap" id="teacher-view"></div></section>
+    </div>
   </main>
+
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-head"><h3 id="modal-title"></h3><button class="modal-close" id="modal-close">إغلاق ×</button></div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="wrap">
       <p>«والمعاني مطروحةٌ في الطريق… وإنما الشأنُ في إقامة الوزن وتخيُّرِ اللفظ» — الجاحظ</p>
-      <p class="small">موقع تعليمي مستلهَم من كتاب «العرنجية» لأحمد الغامدي. الشواهد من القرآن والحديث وكلام العرب في العصور النبوي والراشدي والأموي والعباسي.</p>
+      <p class="small">منصة تعليمية مستلهَمة من كتاب «العرنجية» لأحمد الغامدي. النصوص من العصر الجاهلي والنبوي والراشدي والأموي والعباسي. التلاوة بصوت الشيخ محمود خليل الحصري عن EveryAyah.com.</p>
     </div>
   </footer>
 
+  <script src="js/config.js"></script>
   <script src="js/data-dict.js"></script>
   <script src="js/data-texts.js"></script>
+  <script src="js/content/dict-alfaz.js"></script>
+  <script src="js/content/dict-adawat.js"></script>
+  <script src="js/content/dict-afaal.js"></script>
+  <script src="js/content/dict-istiara.js"></script>
+  <script src="js/content/dict-asalib.js"></script>
+  <script src="js/content/texts-jahili.js"></script>
+  <script src="js/content/texts-quran.js"></script>
+  <script src="js/content/texts-hadith.js"></script>
+  <script src="js/content/texts-rashidi.js"></script>
+  <script src="js/content/texts-umawi.js"></script>
+  <script src="js/content/texts-abbasi.js"></script>
+  <script src="js/content/more-base.js"></script>
+  <script src="js/data-build.js"></script>
   <script src="js/data-path.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/cloud.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/app.js"></script>
 </body>

@@ -161,6 +161,10 @@ const Quiz = (() => {
     return p;
   }
 
+  function tag(q, kind, x) {
+    if (!q._item) { q._kind = TEXT_TYPES.has(q.type) ? "text" : "dict"; q._item = q._kind === kind ? x : null; }
+    return q;
+  }
   /* توليد سؤال واحد من نوع معيّن ومن مجموعة معيّنة */
   function one(type, dictPool, textPool, used) {
     used = used || new Set();
@@ -169,7 +173,7 @@ const Quiz = (() => {
       let t = pick(pool), tries = 0;
       while (used.has(type + t.id) && tries++ < 20) t = pick(pool);
       used.add(type + t.id);
-      return G[type](t);
+      return tag(G[type](t), "text", t);
     }
     let pool = dictPool;
     if (type === "shahid") { const p = dictPool.filter((d) => d.shahid); if (p.length) pool = p; }
@@ -177,12 +181,12 @@ const Quiz = (() => {
     let d = pick(pool), tries = 0;
     while (used.has(type + d.id) && tries++ < 20) d = pick(pool);
     used.add(type + d.id);
-    return G[type](d);
+    return tag(G[type](d), "dict", d);
   }
 
   /* أسئلة اختبار مرحلة */
   function forLevel(L) {
-    const own = L.n === 6 ? DICT : DICT.filter((d) => d.level === L.n);
+    const own = L.n >= 6 ? DICT : DICT.filter((d) => d.level === L.n);
     const review = DICT.filter((d) => d.level < L.n);
     const texts = TEXTS.filter((t) => t.level === L.n);
     const used = new Set(), qs = [];
@@ -207,7 +211,7 @@ const Quiz = (() => {
         const ok = q.options[+b.dataset.i].ok;
         box.querySelectorAll(".option").forEach((o) => { o.disabled = true; if (q.options[+o.dataset.i].ok) o.classList.add("correct"); });
         if (!ok) b.classList.add("wrong");
-        feedback(box, q, ok); onAnswered(ok);
+        feedback(box, q, ok); answered(q, ok, onAnswered);
       });
     } else if (q.kind === "spot") {
       box.innerHTML = head + `<p class="spot-line">${q.words.map((w, i) => `<button class="word" data-i="${i}">${esc(w.w)}</button>`).join(" ")}</p>
@@ -218,7 +222,7 @@ const Quiz = (() => {
         const ok = q.words[+b.dataset.i].ok;
         box.querySelectorAll(".word").forEach((w) => { w.disabled = true; if (q.words[+w.dataset.i].ok) w.classList.add("target"); });
         if (!ok) b.classList.add("wrong");
-        feedback(box, q, ok); onAnswered(ok);
+        feedback(box, q, ok); answered(q, ok, onAnswered);
       });
     } else if (q.kind === "rewrite") {
       box.innerHTML = head + `<textarea class="rewrite-input" rows="2" placeholder="اكتب الجملة هنا…"></textarea>
@@ -227,7 +231,7 @@ const Quiz = (() => {
       const ta = box.querySelector(".rewrite-input");
       const done = (ok, msg) => {
         ta.disabled = true; box.querySelectorAll(".rw-check,.rw-skip").forEach((b) => b.remove());
-        feedback(box, q, ok, msg); onAnswered(ok);
+        feedback(box, q, ok, msg); answered(q, ok, onAnswered);
       };
       box.querySelector(".rw-check").addEventListener("click", () => {
         const v = ta.value.trim();
@@ -246,9 +250,15 @@ const Quiz = (() => {
       ta.focus();
     }
   }
+  function answered(q, ok, cb) {
+    try { if (api.onAnswer) api.onAnswer(q, ok); } catch (e) { console.error(e); }
+    cb(ok);
+  }
   function feedback(box, q, ok, msg) {
     const fb = box.querySelector(".quiz-feedback");
-    fb.innerHTML = `<div class="verdict ${ok ? "ok" : "no"}">${ok ? "أحسنت! ذائقةٌ عربية." : "لم تُصب هذه المرة."}${msg ? ` <span class="verdict-msg">${msg}</span>` : ""}</div>${q.explain}`;
+    const it = q._item;
+    const moreBtn = it && it.more ? `<div class="fb-actions"><button class="more-btn" data-more="${q._kind}:${it.id}">استزادة</button></div>` : "";
+    fb.innerHTML = `<div class="verdict ${ok ? "ok" : "no"}">${ok ? "أحسنت! ذائقةٌ عربية." : "لم تُصب هذه المرة."}${msg ? ` <span class="verdict-msg">${msg}</span>` : ""}</div>${q.explain}${moreBtn}`;
     fb.hidden = false;
   }
 
@@ -278,5 +288,6 @@ const Quiz = (() => {
     show();
   }
 
-  return { G, one, forLevel, render, run, dictExplain, eraTag };
+  const api = { G, one, forLevel, render, run, dictExplain, eraTag, onAnswer: null };
+  return api;
 })();

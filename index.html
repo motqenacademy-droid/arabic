@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>الذائقة العربية</title>
-  <meta name="description" content="موقع تعليمي لتهذيب الذائقة العربية وتقويم اللسان، على منهج كتاب «العرنجية» في نبذ التراكيب الدخيلة، بنصوص العصر النبوي والراشدي والأموي والعباسي.">
+  <meta name="description" content="موقع تعليمي متكامل لتهذيب الذائقة العربية وتقويم اللسان، على منهج كتاب «العرنجية» في نبذ التراكيب الدخيلة، بنصوص العصر النبوي والراشدي والأموي والعباسي.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,140 +19,177 @@
       </a>
       <button class="nav-toggle" aria-label="القائمة" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="التنقل الرئيس">
-        <a href="#home">الرئيسة</a>
-        <a href="#principles">الأصول</a>
-        <a href="#dict">معجم العرنجية</a>
-        <a href="#texts">المختارات</a>
-        <a href="#quiz">الامتحان</a>
-        <a href="#checker">المِحَكّ</a>
+        <a href="#home" data-nav="home">الرئيسة</a>
+        <a href="#path" data-nav="path">رحلة التعلّم</a>
+        <a href="#dict" data-nav="dict">المعجم</a>
+        <a href="#texts" data-nav="texts">المختارات</a>
+        <a href="#practice" data-nav="practice">التدريب</a>
+        <a href="#checker" data-nav="checker">المِحَكّ</a>
       </nav>
       <button class="theme-toggle" aria-label="تبديل الوضع الليلي" title="الوضع الليلي"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
     </div>
   </header>
 
   <main>
-    <!-- الرئيسة -->
-    <section id="home" class="hero">
-      <div class="wrap">
-        <p class="eyebrow">على منهج كتاب «العرنجية»</p>
-        <h1>ردَّ لسانَك إلى<br><span class="accent">بيانه الأول</span></h1>
-        <p class="lead">
-          نكتب اليوم بكلماتٍ عربية، لكنّ كثيراً منها مرصوفٌ على قوالب أعجمية مترجمة.
-          هنا تتعلّم أن تعرف «العرنجية» إذا رأيتها، وأن تستبدل بها ما قالته العرب في
-          <strong>العصر النبوي والراشدي والأموي والعباسي</strong>، حتى تستقيم الذائقة ويصفو الوجدان.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#dict">ابدأ بالمعجم</a>
-          <a class="btn" href="#quiz">امتحن ذائقتك</a>
-        </div>
-
-        <figure class="daily card" aria-live="polite">
-          <figcaption>
-            <span class="tag" id="daily-era"></span>
-            <span>نصُّ اليوم</span>
-            <button class="link-btn" id="daily-next">نصٌّ آخر ↺</button>
-          </figcaption>
-          <blockquote id="daily-text"></blockquote>
-          <p class="daily-meta" id="daily-meta"></p>
-        </figure>
-      </div>
-    </section>
-
-    <!-- عن الكتاب -->
-    <section id="about" class="section">
-      <div class="wrap narrow">
-        <h2>ما «العرنجية»؟</h2>
-        <p>
-          «العرنجية» لفظٌ منحوت من <em>العربية</em> و<em>الإفرنجية</em>، وهو عنوان كتاب
-          <strong>«العرنجية: بلسانٍ عربيٍّ هجين»</strong> للترجمان <strong>أحمد الغامدي</strong>
-          (مركز تكوين، ٢٠٢١). وفكرته أنّ اللغة التي نكتبها في الصحف والكتب ووسائل التواصل
-          قد صارت في ظاهرها عربية، وفي باطنها تراكيبُ مترجمة حرفياً، حتى أزاحت التراكيبُ الدخيلة
-          نظائرَها الفصيحة الموروثة.
-        </p>
-        <p>
-          ومثاله الأشهر: قولهم «يبدو كما لو كان»، وهو نقلٌ لـ <span dir="ltr">it seems as if</span>،
-          وقد عبّرت عنه العرب بحرفٍ واحد: <strong>«كأنّ»</strong>.
-        </p>
-        <p class="note">
-          اتبع الموقع منهج الكتاب وفكرته، وصاغ أمثلةً على طريقته، واختار الشواهد كلها من
-          القرآن والحديث وكلام العرب في العصور الأربعة دون غيرها.
-          وننصح بقراءة الكتاب نفسه، والرجوع إلى «جداول العرنجية» فيه للاستزادة.
-        </p>
-      </div>
-    </section>
-
-    <!-- الأصول -->
-    <section id="principles" class="section alt">
-      <div class="wrap">
-        <h2>أصول التذوّق</h2>
-        <p class="section-lead">ستة أصول تختصر المنهج، فاجعلها ميزانك قبل أن تكتب.</p>
-        <ol class="principles" id="principles-list"></ol>
-      </div>
-    </section>
-
-    <!-- المعجم -->
-    <section id="dict" class="section">
-      <div class="wrap">
-        <h2>معجم العرنجية</h2>
-        <p class="section-lead">التركيب الدخيل، وأصله الأعجمي، ونظيره الفصيح، وشاهده من كلام العصور الأولى.</p>
-        <div class="toolbar">
-          <input type="search" id="dict-search" placeholder="ابحث في المعجم… (مثلاً: دور، تمّ، كأن)" aria-label="ابحث في المعجم">
-          <span class="count" id="dict-count"></span>
-        </div>
-        <div class="dict-grid" id="dict-list"></div>
-      </div>
-    </section>
-
-    <!-- المختارات -->
-    <section id="texts" class="section alt">
-      <div class="wrap">
-        <h2>المختارات</h2>
-        <p class="section-lead">نصوصٌ تُقرأ بصوتٍ مسموع وتُحفظ، فهي مادّة الذائقة. ولكلّ نصٍّ لمسةُ تذوّق.</p>
-        <div class="filters" role="tablist" id="era-filters">
-          <button class="chip active" data-era="all">الكلّ</button>
-          <button class="chip" data-era="nabawi">العصر النبوي</button>
-          <button class="chip" data-era="rashidi">العصر الراشدي</button>
-          <button class="chip" data-era="umawi">العصر الأموي</button>
-          <button class="chip" data-era="abbasi">العصر العباسي</button>
-        </div>
-        <div class="texts-grid" id="texts-list"></div>
-      </div>
-    </section>
-
-    <!-- الامتحان -->
-    <section id="quiz" class="section">
-      <div class="wrap narrow">
-        <h2>امتحن ذائقتك</h2>
-        <p class="section-lead">أيُّ العبارتين أجرى على لسان العرب؟ اختر، ثم اقرأ الشاهد.</p>
-        <div class="card quiz-card">
-          <div class="quiz-top">
-            <span id="quiz-progress"></span>
-            <span>النتيجة: <strong id="quiz-score">0</strong> · أفضل نتيجة: <strong id="quiz-best">0</strong></span>
+    <!-- ================= الرئيسة ================= -->
+    <div class="page" data-page="home">
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow">على منهج كتاب «العرنجية»</p>
+          <h1>ردَّ لسانَك إلى<br><span class="accent">بيانه الأول</span></h1>
+          <p class="lead">
+            نكتب اليوم بكلماتٍ عربية، لكنّ كثيراً منها مرصوفٌ على قوالب أعجمية مترجمة.
+            هنا رحلةٌ من ست مراحل تتعلّم فيها أن تعرف «العرنجية» إذا رأيتها، وأن تستبدل بها ما قالته العرب في
+            <strong>العصر النبوي والراشدي والأموي والعباسي</strong>، حتى تصير <strong>ذائقاً</strong>.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#path" id="home-cta">ابدأ رحلة التعلّم</a>
+            <a class="btn" href="#practice">تدرّب تدريباً حرّاً</a>
           </div>
-          <div class="quiz-options" id="quiz-options"></div>
-          <div class="quiz-feedback" id="quiz-feedback" hidden></div>
-          <div class="quiz-actions">
-            <button class="btn primary" id="quiz-next" hidden>السؤال التالي</button>
-            <button class="btn" id="quiz-restart">ابدأ من جديد</button>
+
+          <div class="stats" id="home-stats"></div>
+
+          <div class="home-grid">
+            <div class="card progress-card" id="home-progress"></div>
+            <figure class="daily card" aria-live="polite">
+              <figcaption>
+                <span class="tag" id="daily-era"></span>
+                <span>نصُّ اليوم</span>
+                <button class="link-btn" id="daily-next">نصٌّ آخر ↺</button>
+              </figcaption>
+              <blockquote id="daily-text"></blockquote>
+              <p class="daily-meta" id="daily-meta"></p>
+            </figure>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- المحك -->
-    <section id="checker" class="section alt">
-      <div class="wrap narrow">
-        <h2>المِحَكّ</h2>
-        <p class="section-lead">الصق نصّك هنا ليكشف لك ما فيه من تراكيب عرنجية شائعة، ويقترح نظيرها الفصيح.</p>
-        <textarea id="checker-input" rows="7" placeholder="مثال: تمّ افتتاح المعرض، ويبدو كما لو كان سوقاً من أسواق العرب، وقد لعب الأدباء دوراً كبيراً في نجاحه.">تمّ افتتاح المعرض، ويبدو كما لو كان سوقاً من أسواق العرب، وقد لعب الأدباء دوراً كبيراً في نجاحه. وبالنسبة للزوار فإنهم كانوا يتواجدون على مدار الساعة.</textarea>
-        <div class="checker-actions">
-          <button class="btn primary" id="checker-run">افحص النص</button>
-          <button class="btn" id="checker-clear">امسح</button>
+      <section class="section alt">
+        <div class="wrap narrow">
+          <h2>ما «العرنجية»؟</h2>
+          <p>
+            «العرنجية» لفظٌ منحوت من <em>العربية</em> و<em>الإفرنجية</em>، وهو عنوان كتاب
+            <strong>«العرنجية: بلسانٍ عربيٍّ هجين»</strong> للترجمان <strong>أحمد الغامدي</strong>
+            (مركز تكوين، ٢٠٢١). وفكرته أنّ اللغة التي نكتبها قد صارت في ظاهرها عربية، وفي باطنها
+            تراكيبُ مترجمة حرفياً، حتى أزاحت التراكيبُ الدخيلة نظائرَها الفصيحة الموروثة.
+          </p>
+          <p>
+            ومثاله الأشهر: قولهم «يبدو كما لو كان»، وهو نقلٌ لـ <span dir="ltr">it seems as if</span>،
+            وقد عبّرت عنه العرب بحرفٍ واحد: <strong>«كأنّ»</strong>.
+          </p>
+          <p class="note">
+            اتبع الموقع منهج الكتاب وفكرته، وصاغ الأمثلة على طريقته، واختار الشواهد والنصوص كلها من
+            القرآن والحديث وكلام العرب في العصور الأربعة دون غيرها. وما في نسبته خلاف وُسم بـ«يُروى».
+            وننصح بقراءة الكتاب نفسه والرجوع إلى «جداول العرنجية» فيه.
+          </p>
         </div>
-        <div id="checker-output" class="checker-output" aria-live="polite"></div>
-        <p class="note small">المِحَكّ يكشف الأنماط الشائعة فحسب؛ والذائقة الحقّة تُكتسب بطول القراءة في المختارات.</p>
-      </div>
-    </section>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2>أصول التذوّق</h2>
+          <p class="section-lead">ستة أصول تختصر المنهج، فاجعلها ميزانك قبل أن تكتب.</p>
+          <ol class="principles" id="principles-list"></ol>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= رحلة التعلم ================= -->
+    <div class="page" data-page="path" hidden>
+      <section class="section">
+        <div class="wrap">
+          <h2>رحلة التعلّم</h2>
+          <p class="section-lead">ست مراحل متدرّجة من التنبّه إلى التذوّق. في كل مرحلة درسٌ، وتراكيب تحفظها، ونصوصٌ تقرؤها، واختبارٌ تجتازه بنسبة ٧٥٪ لتنفتح المرحلة التالية.</p>
+          <div class="path" id="path-list"></div>
+          <div class="path-foot">
+            <button class="btn small-btn" id="reset-progress">مسح التقدّم والبدء من جديد</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= صفحة المرحلة ================= -->
+    <div class="page" data-page="level" hidden>
+      <section class="section">
+        <div class="wrap" id="level-view"></div>
+      </section>
+    </div>
+
+    <!-- ================= المعجم ================= -->
+    <div class="page" data-page="dict" hidden>
+      <section class="section">
+        <div class="wrap">
+          <h2>معجم العرنجية</h2>
+          <p class="section-lead">التركيب الدخيل، وأصله الأعجمي، ونظيره الفصيح، وشاهده من كلام العصور الأولى.</p>
+          <div class="toolbar">
+            <input type="search" id="dict-search" placeholder="ابحث في المعجم… (مثلاً: دور، تمّ، كأن)" aria-label="ابحث في المعجم">
+            <select id="dict-cat" aria-label="الباب"></select>
+            <span class="count" id="dict-count"></span>
+          </div>
+          <div class="dict-grid" id="dict-list"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= المختارات ================= -->
+    <div class="page" data-page="texts" hidden>
+      <section class="section">
+        <div class="wrap">
+          <h2>المختارات</h2>
+          <p class="section-lead">نصوصٌ تُقرأ بصوتٍ مسموع وتُحفظ، فهي مادّة الذائقة. ولكلّ نصٍّ لمسةُ تذوّق.</p>
+          <div class="toolbar">
+            <input type="search" id="texts-search" placeholder="ابحث في النصوص أو القائلين… (مثلاً: المتنبي، كأنّ)" aria-label="ابحث في النصوص">
+            <select id="texts-kind" aria-label="النوع"></select>
+            <span class="count" id="texts-count"></span>
+          </div>
+          <div class="filters" id="era-filters">
+            <button class="chip active" data-era="all">الكلّ</button>
+            <button class="chip" data-era="nabawi">العصر النبوي</button>
+            <button class="chip" data-era="rashidi">العصر الراشدي</button>
+            <button class="chip" data-era="umawi">العصر الأموي</button>
+            <button class="chip" data-era="abbasi">العصر العباسي</button>
+          </div>
+          <div class="texts-grid" id="texts-list"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= التدريب ================= -->
+    <div class="page" data-page="practice" hidden>
+      <section class="section">
+        <div class="wrap narrow">
+          <h2>التدريب الحرّ</h2>
+          <p class="section-lead">أسئلة لا تنتهي من البنك كله. اختر نوع السؤال ومرحلته، وتدرّب ما شئت.</p>
+          <div class="practice-controls card">
+            <label>نوع السؤال
+              <select id="pr-type"></select>
+            </label>
+            <label>المرحلة
+              <select id="pr-level"></select>
+            </label>
+            <div class="streak">صحيح: <strong id="pr-ok">٠</strong>، خطأ: <strong id="pr-no">٠</strong>، سلسلة: <strong id="pr-streak">٠</strong></div>
+          </div>
+          <div id="practice-quiz"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= المحك ================= -->
+    <div class="page" data-page="checker" hidden>
+      <section class="section">
+        <div class="wrap narrow">
+          <h2>المِحَكّ</h2>
+          <p class="section-lead">الصق نصّك هنا ليكشف لك ما فيه من تراكيب عرنجية شائعة، ويقترح نظيرها الفصيح.</p>
+          <textarea id="checker-input" rows="8">تمّ افتتاح المعرض، ويبدو كما لو كان سوقاً من أسواق العرب، وقد لعب الأدباء دوراً كبيراً في نجاحه. وبالنسبة للزوار فإنهم كانوا يتواجدون على مدار الساعة، وأكد المنظمون على أن المعرض سوف لن يُغلق.</textarea>
+          <div class="checker-actions">
+            <button class="btn primary" id="checker-run">افحص النص</button>
+            <button class="btn" id="checker-clear">امسح</button>
+          </div>
+          <div id="checker-output" class="checker-output" aria-live="polite"></div>
+          <p class="note small">المِحَكّ يكشف الأنماط الشائعة فحسب؛ والذائقة الحقّة تُكتسب بطول القراءة في المختارات.</p>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -162,7 +199,10 @@
     </div>
   </footer>
 
-  <script src="js/data.js"></script>
+  <script src="js/data-dict.js"></script>
+  <script src="js/data-texts.js"></script>
+  <script src="js/data-path.js"></script>
+  <script src="js/quiz.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

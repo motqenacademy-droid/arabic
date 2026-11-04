@@ -51,7 +51,7 @@ const Audio2 = (() => {
   }
   function hide() { if (bar) bar.hidden = true; }
   function stop() {
-    queue = []; player.pause(); player.removeAttribute("src");
+    queue = []; player.onerror = null; player.pause(); player.removeAttribute("src");
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     document.querySelectorAll(".speak.playing").forEach((b) => b.classList.remove("playing"));
     hide();
@@ -61,14 +61,14 @@ const Audio2 = (() => {
     if (!queue.length) { stop(); return; }
     const u = queue.shift();
     player.src = u;
-    player.play().catch(() => fail(title));
+    player.play().catch(() => { if (!player.onerror) fail(title); });
   }
   function fail(title) {
     show(`تعذّر تحميل التلاوة الآن${title ? ` (${title})` : ""}. تحقّق من الاتصال بالإنترنت.`, false);
     queue = [];
   }
   player.addEventListener("ended", () => playQueue(label ? label.textContent : ""));
-  player.addEventListener("error", () => { if (player.getAttribute("src")) fail(""); });
+  player.addEventListener("error", () => { if (player.getAttribute("src") && !player.onerror) fail(""); });
 
   function playQuran(ref, btn) {
     const r = typeof ref === "string" ? parseRef(ref) : ref;
@@ -134,12 +134,29 @@ const Audio2 = (() => {
     });
   }
 
+  /* ===== التسجيلات المولّدة عند النشر (صوت Microsoft العصبي) ===== */
+  // يجب أن تطابق hash في scripts/tts-list.js
+  function hash(s) { let h = 0x811c9dc5; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(16).padStart(8, "0") + s.length.toString(16); }
+  let recorded = null;
+  const manifest = fetch("audio/tts/index.json", { cache: "no-cache" })
+    .then((r) => (r.ok ? r.json() : [])).then((a) => { recorded = new Set(a); }).catch(() => { recorded = new Set(); });
+  function hasRecording(t) { return !!(recorded && recorded.has(hash(t.text))); }
+
   /* نقطة الدخول: نص من المختارات */
-  function playText(t, btn) {
+  async function playText(t, btn) {
     if (t.audio && t.audio.url) return playFile(t.audio.url, t.title, btn);
     if (t.kind === "قرآن" && playQuran(t.audio && t.audio.s ? t.audio : t.ref, btn)) return;
     if (t.kind === "قرآن") { show("لم يُعرف موضع الآية لتشغيل التلاوة.", false); return; }
+    if (!recorded) { try { await Promise.race([manifest, new Promise((r) => setTimeout(r, 1500))]); } catch (e) {} }
+    if (hasRecording(t)) {
+      stop(); queue = [`audio/tts/${hash(t.text)}.mp3`];
+      show(`${t.title} — قراءة بصوت عربي عصبي`, false);
+      if (btn) btn.classList.add("playing");
+      player.onerror = () => { player.onerror = null; speak(t.text, t.title, btn); };
+      playQueue("");
+      return;
+    }
     speak(t.text, t.title, btn);
   }
-  return { parseRef, playQuran, playText, speak, stop, SURAHS };
+  return { parseRef, playQuran, playText, speak, stop, SURAHS, hash };
 })();

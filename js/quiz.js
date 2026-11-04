@@ -247,7 +247,7 @@ const Quiz = (() => {
         done(true, "خلت جملتك من التركيب الدخيل. قارنها بالنموذج:");
       });
       box.querySelector(".rw-skip").addEventListener("click", () => done(false, "هذا هو النموذج:"));
-      ta.focus();
+      if (!matchMedia("(pointer: coarse)").matches) ta.focus();
     }
   }
   function answered(q, ok, cb) {

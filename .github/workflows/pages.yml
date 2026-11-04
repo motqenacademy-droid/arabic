@@ -25,10 +25,29 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: استعادة التسجيلات السابقة
+        uses: actions/cache@v4
+        with:
+          path: .tts-cache
+          key: tts-${{ github.run_id }}
+          restore-keys: tts-
+      - name: تسجيل النصوص بصوت عربي عصبي (Microsoft ar-SA-HamedNeural)
+        continue-on-error: true
+        timeout-minutes: 40
+        run: |
+          pip install --quiet "edge-tts>=6.1.10"
+          node scripts/tts-list.js > tts-jobs.json
+          python3 scripts/tts-gen.py tts-jobs.json .tts-cache
       - name: تجهيز ملفات الموقع
         run: |
-          mkdir -p _site
+          mkdir -p _site/audio/tts
           cp -r index.html css js _site/
+          [ -d audio ] && cp -r audio/. _site/audio/ || true
+          cp .tts-cache/*.mp3 .tts-cache/index.json _site/audio/tts/ 2>/dev/null || echo "[]" > _site/audio/tts/index.json
+          echo "تسجيلات: $(ls _site/audio/tts/*.mp3 2>/dev/null | wc -l)"
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

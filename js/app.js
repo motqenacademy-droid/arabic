@@ -22,7 +22,7 @@
     if (Cloud.user) Cloud.pushProgress(P);
   }
   const passed = (n) => !!(P.levels[n] && P.levels[n].passed);
-  const unlocked = (n) => n === 1 || passed(n - 1);
+  const unlocked = () => true; // المراحل كلها مفتوحة، والترتيب مقترح
   const currentLevel = () => { for (const L of LEVELS) if (!passed(L.n)) return L.n; return LAST + 1; };
   function merge(a, b) {
     const out = { levels: {}, known: [], name: a.name || b.name || "" };
@@ -174,8 +174,8 @@
       const nText = TEXTS.filter((t) => t.level === L.n).length;
       const nq = Object.values(L.q).reduce((a, b) => a + b, 0);
       const status = st.passed ? `<span class="status ok">✓ اجتزتها (${pct(st.best)})</span>`
-        : lock ? `<span class="status lock">🔒 مغلقة</span>`
-        : st.attempts ? `<span class="status cur">أفضل نتيجة ${pct(st.best || 0)}</span>` : `<span class="status cur">متاحة</span>`;
+        : st.attempts ? `<span class="status cur">أفضل نتيجة ${pct(st.best || 0)}</span>`
+        : L.n === currentLevel() ? `<span class="status cur">▶ المقترحة لك الآن</span>` : `<span class="status lock">لم تبدأها</span>`;
       return `<a class="level-card card ${lock ? "locked" : ""} ${st.passed ? "done" : ""}" href="${lock ? "#path" : "#level-" + L.n}" ${lock ? 'aria-disabled="true"' : ""}>
         <div class="lvl-num">${ar(L.n)}</div>
         <div class="lvl-body"><h3>${esc(L.title)}</h3><p class="lvl-sub">${esc(L.sub)}</p>
@@ -283,7 +283,7 @@
     el.innerHTML = `<div class="card result ${ok ? "pass" : "fail"}">
       <div class="big">${ar(score)} / ${ar(total)}</div>
       <h3>${ok ? (L.n === LAST ? "أتممت الرحلة! صرتَ ذائقاً." : "أحسنت! اجتزت المرحلة.") : "لم تبلغ حدّ النجاح بعد."}</h3>
-      <p>${ok ? (firstPass && nextL ? `انفتحت لك المرحلة ${ar(nextL.n)}: «${esc(nextL.title)}».` : "")
+      <p>${ok ? (firstPass && nextL ? `المرحلة التالية: «${esc(nextL.title)}».` : "")
         : `تحتاج إلى ${ar(Math.ceil(total * PASS_RATIO))} إجابات صحيحة. راجع التراكيب والنصوص، ثم أعد المحاولة.`}</p>
       <div class="quiz-actions center">
         ${ok && nextL ? `<a class="btn primary" href="#level-${nextL.n}">إلى المرحلة ${ar(nextL.n)} ←</a>` : ""}
@@ -723,7 +723,7 @@
     if (!$(`.page[data-page="${page}"]`)) page = "home";
     closeModal();
     $$(".page").forEach((p) => { p.hidden = p.dataset.page !== page; });
-    $$(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === page || (page === "level" && a.dataset.nav === "path")));
+    $$(".nav a, .bottom-nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === page || (page === "level" && a.dataset.nav === "path")));
     if (page === "home") renderHome();
     if (page === "path") renderPath();
     if (page === "level") { if (h === "cert") renderCert(); else { levelTab = "lesson"; renderLevel(lv); } }

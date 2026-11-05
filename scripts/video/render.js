@@ -20,6 +20,9 @@ const NAME = `${BOARD.id}-${LANG}-${FORMAT}`;
 const WORK = path.join(ROOT, "video/build/work", NAME);
 const URL_TEXT = "motqenacademy-droid.github.io/arabic";
 const FPS = 30, LEAD = 0.35, TAIL = 0.75;
+// إيقاع العرض: أقل من 1 أسرع (الدعائي)، و1 هادئ (التعليمي)
+const PACE = parseFloat(arg("pace", BOARD.pace || "1"));
+const P = (ms) => Math.round(ms * PACE);
 const FMT = FORMAT === "portrait"
   ? { viewport: { width: 432, height: 768 }, deviceScaleFactor: 2.5, isMobile: true, hasTouch: true, W: 1080, H: 1920, capSize: 17, capBottom: 84 }
   : { viewport: { width: 1280, height: 720 }, deviceScaleFactor: 1.5, isMobile: false, hasTouch: false, W: 1920, H: 1080, capSize: 25, capBottom: 26 };
@@ -72,17 +75,17 @@ async function visible(page, sel) {
 }
 async function center(page, el) {
   await el.evaluate((e) => e.scrollIntoView({ block: "center", behavior: "smooth" }));
-  await sleep(650);
+  await sleep(P(650));
   const b = await el.boundingBox();
   return { x: b.x + Math.min(b.width / 2, b.width - 12), y: b.y + b.height / 2 };
 }
 async function moveAndClick(page, el) {
   const { x, y } = await center(page, el);
   await page.evaluate(([x, y]) => __V.cursorTo(x, y), [x, y]);
-  await sleep(780);
+  await sleep(P(780));
   await page.evaluate(([x, y]) => __V.ripple(x, y), [x, y]);
   await el.evaluate((e) => e.click());
-  await sleep(350);
+  await sleep(P(350));
 }
 async function runStep(page, st) {
   const v = st.value;
@@ -92,24 +95,24 @@ async function runStep(page, st) {
       const el = await visible(page, st.target);
       await moveAndClick(page, el);
       await el.fill("");
-      await el.pressSequentially(v || "", { delay: LANG === "ar" ? 55 : 40 });
+      await el.pressSequentially(v || "", { delay: Math.round((LANG === "ar" ? 55 : 40) * PACE) });
       await el.evaluate((e) => e.dispatchEvent(new Event("input", { bubbles: true })));
-      return sleep(300);
+      return sleep(P(300));
     }
     case "select": {
       const el = await visible(page, st.target);
       const { x, y } = await center(page, el);
-      await page.evaluate(([x, y]) => { __V.cursorTo(x, y); }, [x, y]); await sleep(700);
+      await page.evaluate(([x, y]) => { __V.cursorTo(x, y); }, [x, y]); await sleep(P(700));
       await page.evaluate(([x, y]) => __V.ripple(x, y), [x, y]);
-      await el.selectOption(v); return sleep(500);
+      await el.selectOption(v); return sleep(P(500));
     }
-    case "scroll": await page.evaluate((px) => window.scrollBy({ top: px, behavior: "smooth" }), parseInt(v || "400", 10)); return sleep(1000);
-    case "scrollTo": await (await visible(page, st.target)).evaluate((e) => e.scrollIntoView({ block: "center", behavior: "smooth" })); return sleep(900);
-    case "highlight": { const el = await visible(page, st.target); await el.evaluate((e) => e.scrollIntoView({ block: "center", behavior: "smooth" })); await sleep(600); await el.evaluate((e) => __V.highlight(e)); return sleep(400); }
+    case "scroll": await page.evaluate((px) => window.scrollBy({ top: px, behavior: "smooth" }), parseInt(v || "400", 10)); return sleep(P(1000));
+    case "scrollTo": await (await visible(page, st.target)).evaluate((e) => e.scrollIntoView({ block: "center", behavior: "smooth" })); return sleep(P(900));
+    case "highlight": { const el = await visible(page, st.target); await el.evaluate((e) => e.scrollIntoView({ block: "center", behavior: "smooth" })); await sleep(P(600)); await el.evaluate((e) => __V.highlight(e)); return sleep(P(400)); }
     case "answer": {
       const h = await page.evaluateHandle(() => __V.answer()); const el = h.asElement();
       if (!el) throw new Error("لا سؤال ظاهر للإجابة عنه");
-      await moveAndClick(page, el); return sleep(500);
+      await moveAndClick(page, el); return sleep(P(500));
     }
     case "more": {
       const [kind, ...rest] = String(v).split(":"); const key = rest.join(":");
@@ -122,10 +125,10 @@ async function runStep(page, st) {
       const btn = page.locator(`.page:not([hidden]) [data-more="${kind}:${id}"]`);
       if (await btn.count() && await btn.first().isVisible()) await moveAndClick(page, btn.first());
       else await page.evaluate(([kind, id]) => { const b = document.createElement("button"); b.dataset.more = `${kind}:${id}`; b.hidden = true; document.body.appendChild(b); b.click(); b.remove(); }, [kind, id]);
-      await sleep(500);
+      await sleep(P(500));
       return page.evaluate(() => { const m = document.querySelector("#modal-body"); if (m) m.scrollTop = 0; });
     }
-    case "wait": return sleep(st.ms || parseInt(v || "800", 10));
+    case "wait": return sleep(P(st.ms || parseInt(v || "800", 10)));
     default: throw new Error("خطوة غير معروفة: " + st.op);
   }
 }
@@ -140,6 +143,7 @@ async function recordScene(browser, scene, idx, state, total) {
     await sleep(500);
     await prepare(state.page);
   }
+  await state.page.evaluate((p) => document.documentElement.style.setProperty("--v-glide", (0.7 * p).toFixed(2) + "s"), PACE);
   const page = state.page;
   await page.evaluate(() => { __V.clearHighlights(); __V.uncard(); __V.caption(""); });
   if (!scene.go && scene.card) {
@@ -157,7 +161,7 @@ async function recordScene(browser, scene, idx, state, total) {
   await page.evaluate(([plan, ltr, bottom]) => { plan.forEach((p) => setTimeout(() => __V.caption(p.text, ltr, bottom), p.at * 1000)); }, [captionPlan(scene, dur), ltr, FMT.capBottom]);
   await sleep(LEAD * 1000);
   for (const st of scene.steps || []) {
-    try { await runStep(page, st); await sleep(420); } catch (e) { console.warn(`  ⚠ ${scene.id}: ${st.op} ${st.target || st.value || ""}: ${e.message.split("\n")[0]}`); state.warnings++; }
+    try { await runStep(page, st); await sleep(P(420)); } catch (e) { console.warn(`  ⚠ ${scene.id}: ${st.op} ${st.target || st.value || ""}: ${e.message.split("\n")[0]}`); state.warnings++; }
   }
   const left = target - (Date.now() / 1000 - t0);
   if (left > 0) await sleep(left * 1000);

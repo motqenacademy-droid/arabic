@@ -10,7 +10,7 @@
   #v-cap.on { opacity: 1; }
   #v-cap.ltr { direction: ltr; font-family: "Noto Naskh Arabic", system-ui, sans-serif; font-weight: 600; }
   #v-cursor { position: fixed; z-index: 2147483001; width: 26px; height: 26px; margin: -4px 0 0 -4px; pointer-events: none;
-    transition: left .7s cubic-bezier(.4,.1,.2,1), top .7s cubic-bezier(.4,.1,.2,1), opacity .3s; opacity: 0; }
+    transition: left var(--v-glide, .7s) cubic-bezier(.4,.1,.2,1), top var(--v-glide, .7s) cubic-bezier(.4,.1,.2,1), opacity .3s; opacity: 0; }
   #v-cursor svg { width: 100%; height: 100%; filter: drop-shadow(0 2px 3px rgba(0,0,0,.45)); }
   .v-ripple { position: fixed; z-index: 2147483000; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%;
     border: 3px solid #d6a952; pointer-events: none; animation: v-rip .6s ease-out forwards; }

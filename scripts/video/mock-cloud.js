@@ -3,6 +3,7 @@ const Cloud = (() => {
   const user = { id: "t", email: "teacher@example.com" };
   const profile = { role: "teacher", full_name: "أ. عبد الله" };
   const ls = []; const now = Date.now(); const day = 864e5;
+  const classes = location.hash.startsWith("#account") ? [] : [{ id: "c1", name: "الصف الثاني الثانوي (أ)", code: "K7Q2MX" }];
   const iso = (d) => new Date(now - d * day).toISOString();
   const lv = (arr) => Object.fromEntries(arr.map(([n, best, passed, attempts]) => [n, { best, passed, attempts }]));
   const rows = [
@@ -18,8 +19,9 @@ const Cloud = (() => {
     init: async () => { ls.forEach((f) => f(user, profile)); }, onChange: (f) => ls.push(f),
     signUp: async () => ({}), signIn: async () => {}, signOut: async () => {}, updateName: async () => {},
     pushProgress() {}, pullProgress: async () => null, logAttempt() {}, logAnswer() {}, flush() {},
-    myClasses: async () => [{ id: "c1", name: "الصف الثاني الثانوي (أ)", code: "K7Q2MX" }],
-    createClass: async () => ({ code: "K7Q2MX" }), joinClass: async () => ({ name: "الصف الثاني الثانوي (أ)" }),
+    // في صفحة الحساب تبدأ القائمة فارغة ليظهر إنشاء الفصل؛ وفي لوحة المعلّم يكون الفصل موجوداً
+    myClasses: async () => classes.slice(),
+    createClass: async (name) => { const c = { id: "c1", name: name || "الصف الثاني الثانوي (أ)", code: "K7Q2MX" }; classes.splice(0, classes.length, c); return c; }, joinClass: async () => ({ name: "الصف الثاني الثانوي (أ)" }),
     leaveClass: async () => {}, deleteClass: async () => {}, removeStudent: async () => {},
     overview: async () => rows,
     itemStats: async () => [

@@ -89,6 +89,8 @@ async function moveAndClick(page, el) {
 }
 async function runStep(page, st) {
   const v = st.value;
+  // أي فعل جديد يزيل حلقة التظليل السابقة، فلا تبقى حلقة قديمة فوق نافذة أو بعد تمرير
+  if (["click", "type", "select", "scroll", "scrollTo", "answer", "more"].includes(st.op)) await page.evaluate(() => __V.clearHighlights());
   switch (st.op) {
     case "click": return moveAndClick(page, await visible(page, st.target));
     case "type": {
@@ -108,7 +110,11 @@ async function runStep(page, st) {
     }
     case "scroll": await page.evaluate((px) => window.scrollBy({ top: px, behavior: "smooth" }), parseInt(v || "400", 10)); return sleep(P(1000));
     case "scrollTo": await (await visible(page, st.target)).evaluate((e) => e.scrollIntoView({ block: "center", behavior: "smooth" })); return sleep(P(900));
-    case "highlight": { const el = await visible(page, st.target); await el.evaluate((e) => e.scrollIntoView({ block: "center", behavior: "smooth" })); await sleep(P(600)); await el.evaluate((e) => __V.highlight(e)); return sleep(P(400)); }
+    case "highlight": {
+      const el = await visible(page, st.target);
+      await el.evaluate((e) => { if (getComputedStyle(e).position !== "fixed") e.scrollIntoView({ block: "center", behavior: "smooth" }); });
+      await sleep(P(600)); await el.evaluate((e) => __V.highlight(e)); return sleep(P(400));
+    }
     case "answer": {
       const h = await page.evaluateHandle(() => __V.answer()); const el = h.asElement();
       if (!el) throw new Error("لا سؤال ظاهر للإجابة عنه");

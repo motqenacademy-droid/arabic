@@ -6,7 +6,7 @@
   #v-cap { position: fixed; left: 0; right: 0; margin: 0 auto; width: fit-content; z-index: 2147483000; pointer-events: none;
     max-width: min(90vw, 1060px); box-sizing: border-box; padding: .55em 1.1em .65em; border-radius: 14px; text-align: center;
     background: rgba(12, 31, 51, .9); color: #f6ecd2; border: 1.5px solid #d6a952; box-shadow: 0 8px 30px rgba(0,0,0,.35);
-    font: 600 var(--v-cap-size, 26px)/1.7 "Noto Naskh Arabic", "Amiri", serif; opacity: 0; transition: opacity .35s; }
+    font: 600 var(--v-cap-size, 26px)/1.7 "Noto Naskh Arabic", "Amiri", serif; opacity: 0; transition: opacity .35s; text-wrap: balance; }
   #v-cap.on { opacity: 1; }
   #v-cap.ltr { direction: ltr; font-family: "Noto Naskh Arabic", system-ui, sans-serif; font-weight: 600; }
   #v-cursor { position: fixed; z-index: 2147483001; width: 26px; height: 26px; margin: -4px 0 0 -4px; pointer-events: none;
@@ -51,7 +51,7 @@
       cap.classList.toggle("ltr", !!ltr);
       cap.style.bottom = (bottom || 24) + "px";
       if (!text) { cap.classList.remove("on"); return; }
-      cap.textContent = text; cap.classList.add("on");
+      cap.textContent = text.replace(/(\w)-(\w)/g, "$1\u2011$2"); cap.classList.add("on");
     },
     card(c, ltr, url) {
       V.uncard();
@@ -65,8 +65,20 @@
     cursorTo(x, y) { cur.style.opacity = 1; cur.style.left = x + "px"; cur.style.top = y + "px"; },
     ripple(x, y) { const r = document.createElement("div"); r.className = "v-ripple"; r.style.left = x + "px"; r.style.top = y + "px"; document.body.appendChild(r); setTimeout(() => r.remove(), 700); },
     highlight(el) {
+      V.clearHighlights(); // حلقة واحدة فقط في كل لحظة
       const box = document.createElement("div"); box.className = "v-hl"; document.body.appendChild(box);
-      const place = () => { const r = el.getBoundingClientRect(); Object.assign(box.style, { left: r.left - 6 + "px", top: r.top - 6 + "px", width: r.width + 12 + "px", height: r.height + 12 + "px" }); };
+      const place = () => {
+        const r = el.getBoundingClientRect();
+        const modal = document.getElementById("modal");
+        const covered = modal && !modal.hidden && !modal.contains(el);
+        const head = document.querySelector(".site-header"), nav = document.querySelector(".bottom-nav");
+        const minTop = head ? head.getBoundingClientRect().bottom + 4 : 0;
+        const nb = nav && getComputedStyle(nav).display !== "none" ? nav.getBoundingClientRect().top - 6 : innerHeight;
+        const top = Math.max(r.top - 6, modal && modal.contains(el) ? 0 : minTop), bottom = Math.min(r.bottom + 6, nb);
+        const left = Math.max(r.left - 6, 2), right = Math.min(r.right + 6, innerWidth - 2);
+        const hide = covered || bottom - top < 12 || r.width === 0;
+        Object.assign(box.style, { display: hide ? "none" : "block", left: left + "px", top: top + "px", width: right - left + "px", height: bottom - top + "px" });
+      };
       place(); const t = setInterval(place, 60); hls.push({ box, t });
     },
     clearHighlights() { hls.forEach((h) => { clearInterval(h.t); h.box.remove(); }); hls = []; },

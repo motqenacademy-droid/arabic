@@ -2,6 +2,7 @@
  "id": "tutorial",
  "title_ar": "يومٌ أوّل مع الذائقة العربية: دليل الاستعمال",
  "title_en": "Your First Day with Arabic Taste: A Guided Tour",
+ "pace": 0.8,
  "scenes": [
   {
    "id": "intro",
@@ -18,8 +19,8 @@
      "ms": 1500
     }
    ],
-   "say_ar": "تعالَ نرافقْ سلمى في يومها الأوّل مع «الذائقة العربية»، لنعرف كيف تُستعمَل كلُّ زاويةٍ فيها، وما أحسنُ طريقةٍ للمذاكرة.",
-   "say_en": "Let's follow Salma through her first day on Arabic Taste, to see how each part of the site works and the best way to study.",
+   "say_ar": "تعالَ نرافقْ سلمى في يومها الأوّل مع «الذائقة العربية»، لنعرفَ أحسنَ طريقةٍ للمذاكرة.",
+   "say_en": "Let's follow Salma through her first day on Arabic Taste and find the best way to study.",
    "cap_ar": "نرافق سلمى في يومها الأوّل",
    "cap_en": "A first day with Salma"
   },
@@ -48,8 +49,8 @@
      "ms": 1500
     }
    ],
-   "say_ar": "تفتح سلمى الموقعَ من متصفّحها أو هاتفها، بلا تنزيلٍ ولا رسوم. وفي الرئيسة ما ينتظرها: معجمُ التراكيب الدخيلة، ونصوصٌ من خمسة عصور، وأسئلةٌ متنوّعة.",
-   "say_en": "Salma opens the site in her browser or on her phone: nothing to install, nothing to pay. Home shows what's inside: a dictionary of calques, texts from five eras, and plenty of practice.",
+   "say_ar": "تفتح سلمى الموقعَ في متصفّحها أو هاتفها، مجّاناً بلا تنزيل. وفي الصفحةِ الرئيسة معجمُ الدخيل، ونصوصٌ من خمسة عصور، وأسئلةٌ شتّى.",
+   "say_en": "Salma opens the site in her browser or on her phone: it's free, with nothing to install. The home page offers a dictionary of calques, texts from five eras, and plenty of practice.",
    "cap_ar": "مجّاني، في المتصفّح والهاتف",
    "cap_en": "Free, in your browser or on your phone"
   },
@@ -86,8 +87,8 @@
      "target": "#modal-close"
     }
    ],
-   "say_ar": "وفي كلّ يومٍ نصٌّ جديد، تستمع إليه بضغطة، ثم تفتح «استزادة» لتعرف معانيَه وبلاغته.",
-   "say_en": "Each day brings a new text. One tap plays it, and «Istizada», the deep-dive button, explains its words and rhetoric.",
+   "say_ar": "وفي كلّ يومٍ نصٌّ جديد، تستمع إليه بضغطة، وتفتح «استزادة» لمعانيه وبلاغته.",
+   "say_en": "Each day brings a new text: one tap plays it, and «Istizada», the deep-dive button, explains its words and rhetoric.",
    "cap_ar": "نصُّ اليوم: استمع، ثم «استزادة»",
    "cap_en": "Text of the day: listen, then «Istizada»"
   },
@@ -120,8 +121,8 @@
      "ms": 800
     }
    ],
-   "say_ar": "وهذه بطاقةُ مسيرتها: ما اجتازت من مراحل، وما حفظت من تراكيب. وهي في أوّل الطريق، فلتبدأ رحلةَ التعلّم.",
-   "say_en": "This card tracks her progress: stages passed, expressions learned. She's just starting, so off she goes.",
+   "say_ar": "وهذه بطاقةُ مسيرتها: مراحلُ اجتازتها، وتراكيبُ حفظتها. وهي في أوّل الطريق، فلتبدأ.",
+   "say_en": "Her progress card counts stages passed and expressions learned. She's just starting, so off she goes.",
    "cap_ar": "بطاقة المسيرة، ثم: ابدأ رحلة التعلّم",
    "cap_en": "Her progress card, then the Start button"
   },
@@ -162,8 +163,8 @@
      "ms": 800
     }
    ],
-   "say_ar": "الرحلةُ سبعُ مراحل مفتوحة، من «التنبُّه» إلى «ديوان العرب الأوّل»، وفي آخرها «شهادةُ ذائق». والأحسن أن تسير فيها مرحلةً مرحلة.",
-   "say_en": "The path has seven open stages, from Awareness to the Arabs' First Anthology, with the Dha'iq certificate at the end. Going in order works best.",
+   "say_ar": "الرحلةُ سبعُ مراحل، من «التنبُّه» إلى «ديوان العرب الأوّل»، ثم «شهادةُ ذائق»؛ والأحسنُ أن تقطعَها على الترتيب.",
+   "say_en": "Seven stages run from Awareness to the Arabs' First Anthology, ending with a Connoisseur (Dha'iq) certificate. Going in order works best.",
    "cap_ar": "سبعُ مراحل، ثم «شهادة ذائق»",
    "cap_en": "Seven stages, then a certificate"
   },
@@ -192,8 +193,8 @@
      "ms": 1500
     }
    ],
-   "say_ar": "ولكلّ مرحلةٍ أربعةُ أبواب: الدرس، فالتراكيب، فالنصوص، فالاختبار. تقرأ سلمى الدرسَ أوّلاً، وفيه واجبُ المرحلة.",
-   "say_en": "Each stage has four tabs: lesson, expressions, texts, test. Salma reads the lesson first; it includes the stage assignment.",
+   "say_ar": "ولكلّ مرحلةٍ أربعةُ أبواب: الدرس، فالتراكيب، فالنصوص، فالاختبار. تبدأ بالدرس، وفيه واجبُ المرحلة.",
+   "say_en": "Each stage has four tabs: lesson, expressions, texts, test. The lesson comes first, with the stage assignment.",
    "cap_ar": "الدرس ← التراكيب ← النصوص ← الاختبار",
    "cap_en": "Lesson → expressions → texts → test"
   },
@@ -223,8 +224,8 @@
      "ms": 2000
     }
    ],
-   "say_ar": "وفي التراكيب ترى كلَّ عبارةٍ دخيلة بإزاء فصيحها، وأصلَها الإنجليزي، ومثالاً للخطأ وآخرَ للصواب، وكثيراً ما يصحبها شاهد.",
-   "say_en": "In Expressions, each calque sits beside its classical form, with its English source, a wrong and a right example, and often a classical citation.",
+   "say_ar": "وفي التراكيب كلُّ دخيلٍ بإزاء فصيحه، مع أصله الإنجليزي، ومثالَي الخطأ والصواب، وشاهدٍ غالباً.",
+   "say_en": "In Expressions, each calque sits beside its classical form, with its English source, wrong and right examples, and often a citation.",
    "cap_ar": "الدخيل، وفصيحه، وأصله، وشاهده",
    "cap_en": "Calque, classical form, source, citation"
   },
@@ -254,8 +255,8 @@
      "target": "#modal-close"
     }
    ],
-   "say_ar": "و«استزادة» تزيدها القاعدةَ والأمثلةَ ونصيحةً عملية؛ فهذه العبارةُ الطويلة تُغني عنها كلمةٌ واحدة: «كأنّ».",
-   "say_en": "«Istizada» adds the rule, more examples and a tip. Here, the calque for \"it seems as if\" comes down to one classical word: «ka'anna».",
+   "say_ar": "و«استزادة» تزيدك القاعدةَ والأمثلةَ والنصيحة؛ فهذه العبارةُ كلُّها تُغني عنها «كأنّ».",
+   "say_en": "«Istizada» adds the rule, examples and a tip: this whole calque for \"it seems as if\" becomes one word, «ka'anna».",
    "cap_ar": "«استزادة»: القاعدة والأمثلة والنصيحة",
    "cap_en": "«Istizada»: rule, examples, tip"
   },
@@ -305,8 +306,8 @@
      "target": "#fc-know"
     }
    ],
-   "say_ar": "ثم بطاقاتُ الحفظ: ترى الدخيل، وتستحضر فصيحه، ثم تقلب البطاقة؛ فإن عرفتها طُويت، وإلا أُعيدت عليها بعدُ.",
-   "say_en": "Next, flashcards: see the calque, recall the classical form, flip. Got it? Move on. If not, it comes back later.",
+   "say_ar": "ثم بطاقاتُ الحفظ: ترى الدخيل، وتستحضر فصيحه، ثم تقلبُ البطاقة؛ فما عرفَته طُوي، وما جهلَته عاد.",
+   "say_en": "Next, flashcards: see the calque, recall the classical form, flip. Known cards move on; missed ones come back later.",
    "cap_ar": "بطاقات الحفظ: تذكّر، ثم اقلب",
    "cap_en": "Flashcards: recall, then flip"
   },
@@ -339,8 +340,8 @@
      "ms": 1800
     }
    ],
-   "say_ar": "ثم النصوص، وهي لُبُّ الطريقة: تقرأ النصَّ جهراً مرّتين، وتستمع إليه، وتقف عند «لمسةِ تذوّق» تحته.",
-   "say_en": "Then the texts, the heart of the method: read each aloud twice, listen to it, and pause on the taste note below.",
+   "say_ar": "ثم النصوص، وهي لُبُّ الطريقة: تقرؤها جهراً مرّتين، وتستمع إليها، وتقف عند «لمسةِ تذوّق».",
+   "say_en": "Then the texts, the heart of the method: read each aloud twice, listen, and pause on the taste note.",
    "cap_ar": "اقرأ مرّتين، واستمع، وتذوّق",
    "cap_en": "Read twice, listen, savor"
   },
@@ -370,8 +371,8 @@
      "target": "#modal-close"
     }
    ],
-   "say_ar": "وفي استزادةِ النصّ معاني المفردات، والمعنى العام، والبلاغة، والمناسبة؛ فتتذوّق قولَه ﷺ: «إنّ من البيانِ لسحراً».",
-   "say_en": "A text's «Istizada» gives word meanings, overall sense, rhetoric and context, so she can savor the Prophet's saying: «Truly, some eloquence is magic.»",
+   "say_ar": "وفي استزادةِ النصّ المفرداتُ والمعنى والبلاغةُ والمناسبة؛ فتتذوّق قولَ النبيِّ صلّى الله عليه وسلّم: «إنّ من البيانِ لسحراً».",
+   "say_en": "A text's «Istizada» covers words, meaning, rhetoric and context, so she can savor the Prophet's saying: «Truly, some eloquence is magic.»",
    "cap_ar": "المفردات، والمعنى، والبلاغة، والمناسبة",
    "cap_en": "Words, meaning, rhetoric, context"
   },
@@ -456,8 +457,8 @@
      "ms": 600
     }
    ],
-   "say_ar": "والأسئلةُ أنواعٌ شتّى: أيُّ العبارتين أفصح، وما البديلُ الفصيح، ولأيّ عصرٍ هذا النص. إنّها تختبر الذائقةَ لا الحفظَ وحده.",
-   "say_en": "The questions come in many forms, such as picking the better phrase or naming a text's era. They test your ear, not just your memory.",
+   "say_ar": "والأسئلةُ أنواعٌ شتّى، تختبر الذائقةَ لا الحفظَ وحده.",
+   "say_en": "The questions mix several types, testing your ear, not just your memory.",
    "cap_ar": "أسئلةٌ تختبر الذائقة",
    "cap_en": "Questions that test your ear"
   },
@@ -476,19 +477,11 @@
     },
     {
      "op": "wait",
-     "ms": 2200
-    },
-    {
-     "op": "highlight",
-     "target": ".q-progress"
-    },
-    {
-     "op": "wait",
-     "ms": 1000
+     "ms": 3200
     }
    ],
-   "say_ar": "وبعد كلّ إجابةٍ يأتيها الشرحُ لساعته. فإن اجتازت مضت إلى المرحلة التالية، وإلا راجعت وأعادت المحاولة.",
-   "say_en": "Every answer gets an instant explanation. Pass, and the next stage awaits; if not, review and try again.",
+   "say_ar": "وبعد كلّ إجابةٍ شرحٌ عاجل؛ فإن نجحت مضت إلى المرحلة التالية، وإلا راجعت وأعادت.",
+   "say_en": "Every answer gets an instant explanation. Pass the test and the next stage opens; if not, review and try again.",
    "cap_ar": "شرحٌ عاجلٌ بعد كلّ إجابة",
    "cap_en": "Instant explanation after each answer"
   },
@@ -531,10 +524,10 @@
      "ms": 1200
     }
    ],
-   "say_ar": "وسوى المراحل مكتبةٌ من خمسِمئةٍ وسبعةٍ وتسعين نصّاً، تتصفّحها على العصور أو الأنواع. والآياتُ يتلوها الشيخ محمود خليل الحُصَري آيةً آية.",
-   "say_en": "Beyond the stages is a library of 597 texts you can browse by era or genre. Quranic verses are recited one by one by Sheikh Mahmoud Khalil al-Husary.",
+   "say_ar": "وسوى المراحل مكتبةٌ من خمسِمئةٍ وسبعةٍ وتسعين نصّاً على العصور والأنواع، والآياتُ بصوت الشيخ الحُصَري.",
+   "say_en": "Beyond the stages, there's a library of 597 texts by era and genre, with Quranic verses recited by Sheikh al-Husary.",
    "cap_ar": "٥٩٧ نصّاً، والقرآن بصوت الحُصَري",
-   "cap_en": "597 texts; Quran by al-Husary"
+   "cap_en": "597 texts; Quran recited by al-Husary"
   },
   {
    "id": "dict",
@@ -562,7 +555,7 @@
      "ms": 1800
     }
    ],
-   "say_ar": "وإذا ارتابت في عبارةٍ بحثت عنها في المعجم: خمسُمئةٍ وثمانيةٌ وعشرون مدخلاً في خمسة أبواب.",
+   "say_ar": "وإن ارتابت في عبارةٍ بحثت عنها في المعجم: خمسُمئةٍ وثمانيةٌ وعشرون مدخلاً.",
    "say_en": "Unsure about a phrase? Search the dictionary: 528 entries in five categories.",
    "cap_ar": "المعجم: ٥٢٨ مدخلاً في خمسة أبواب",
    "cap_en": "Dictionary: 528 entries, 5 categories"
@@ -589,19 +582,11 @@
     },
     {
      "op": "wait",
-     "ms": 1400
-    },
-    {
-     "op": "highlight",
-     "target": ".streak"
-    },
-    {
-     "op": "wait",
-     "ms": 900
+     "ms": 1600
     }
    ],
-   "say_ar": "وللمراجعة اليومية «التدريبُ الحرّ»: تختار نوعَ السؤال والمرحلة وتمضي. وهنا تلمس الكلمةَ الدخيلة في الجملة.",
-   "say_en": "For daily review there's Free Practice: pick a question type and a stage. Here, she taps the calque in the sentence.",
+   "say_ar": "وللمراجعة «التدريبُ الحرّ»: تختار النوعَ والمرحلة؛ وهنا تلمس الكلمةَ الدخيلة.",
+   "say_en": "For review, there's Free Practice: pick a question type and stage. Here, she taps the calque in the sentence.",
    "cap_ar": "التدريب الحرّ: اختر النوع والمرحلة",
    "cap_en": "Free practice: choose type and stage"
   },
@@ -628,8 +613,8 @@
      "ms": 1800
     }
    ],
-   "say_ar": "وأرقى الأنواع العشرة إعادةُ الصياغة: تكتب الجملةَ بالفصحى في هذا الحقل، فيفحصها الموقع.",
-   "say_en": "The most demanding of the ten types is Rewrite: type the sentence in classical Arabic here, and the site checks it.",
+   "say_ar": "وأرقى أنواعه العشرة إعادةُ الصياغة: تكتب الجملةَ بالفصحى، فيفحصها الموقع.",
+   "say_en": "The hardest of the ten types is Rewrite: type the sentence in classical Arabic and the site checks it.",
    "cap_ar": "أعد الصياغة: اكتب، ويُصحَّح لك",
    "cap_en": "Rewrite: type it, get it checked"
   },
@@ -663,8 +648,8 @@
      "ms": 1500
     }
    ],
-   "say_ar": "ثم «المِحَكّ»: تضع فيه أيَّ نصّ، وخيرُ ما تضعه فيه كتابتُها قبل أن تسلّمها، فيُظلّل مواضعَ العرنجية.",
-   "say_en": "Then there's the Touchstone. Paste in any text, ideally your own writing before you hand it in, and it highlights the calques it finds.",
+   "say_ar": "ثم «المِحَكّ»: تضع فيه ما شاءت من نصّ، وأولاه كتابتُها قبل أن تسلّمها، فيُعلِّم على مواضعِ العرنجية.",
+   "say_en": "Then the Touchstone: paste any text, ideally your own writing before you hand it in, and it highlights the calques.",
    "cap_ar": "المِحَكّ: افحص كتابتك قبل نشرها",
    "cap_en": "The Touchstone: check your own writing"
   },
@@ -683,11 +668,11 @@
     },
     {
      "op": "wait",
-     "ms": 2200
+     "ms": 2000
     }
    ],
-   "say_ar": "وتحته لكلّ موضعٍ بديلُه الفصيح، فتعرف أين زلّ قلمُها، فتصلح ما زلّ فيه بنفسها.",
-   "say_en": "Below, each finding has its classical fix, so she sees where her pen slipped and fixes it herself.",
+   "say_ar": "وتحته بديلُ كلِّ موضع، فتصلح زلّاتِ قلمها بنفسها.",
+   "say_en": "Below, each finding gets its classical fix, so she corrects her own slips.",
    "cap_ar": "لكلّ موضعٍ بديلُه الفصيح",
    "cap_en": "Each finding, with its classical fix"
   },
@@ -707,7 +692,7 @@
     }
    ],
    "say_ar": "فإن كنتَ معلّماً، فهكذا تجمع طلابك وتتابعهم.",
-   "say_en": "If you teach, here's how to bring your students together and track their progress.",
+   "say_en": "If you teach, here's how to gather your students and track them.",
    "cap_ar": "للمعلّم",
    "cap_en": "For teachers"
   },
@@ -731,21 +716,21 @@
     },
     {
      "op": "wait",
-     "ms": 800
+     "ms": 900
     },
     {
      "op": "highlight",
-     "target": "#class-msg"
+     "target": "#class-msg .code"
     },
     {
      "op": "wait",
-     "ms": 1500
+     "ms": 1800
     }
    ],
-   "say_ar": "أنشئ حساباً واختر صفةَ «معلّم»، ثم اكتب اسمَ فصلك واضغط «أنشئ فصلاً»، فتأخذَ رمزاً من ستة أحرف.",
-   "say_en": "Sign up and choose the Teacher role. Name your class and press Create class: you get a six-letter code.",
-   "cap_ar": "أنشئ فصلاً، فتأخذ رمزاً من ستة أحرف",
-   "cap_en": "Create a class, get a six-letter code"
+   "say_ar": "أنشئ حسابَ «معلّم»، واكتب اسمَ فصلك واضغط «أنشئ فصلاً»، فتأخذَ رمزاً سداسيّاً.",
+   "say_en": "Sign up as a Teacher, name your class and press Create class: you get a six-character code.",
+   "cap_ar": "أنشئ فصلاً، فتأخذ رمزاً سداسيّاً",
+   "cap_en": "Create a class, get a six-character code"
   },
   {
    "id": "share-code",
@@ -761,8 +746,8 @@
      "ms": 2000
     }
    ],
-   "say_ar": "أرسله إلى طلابك، فيكتبه كلٌّ منهم في صفحة «حسابي» ويضغط «انضمّ»، فيصلك تقدّمُه.",
-   "say_en": "Share it: each student enters it on their account page and taps Join, and their progress reaches you.",
+   "say_ar": "أرسله إلى طلابك، فيكتبه كلٌّ في «حسابي» ويضغط «انضمّ»، فيصلك تقدّمُه.",
+   "say_en": "Share it: students enter it on their account page and tap Join, and their progress reaches you.",
    "cap_ar": "شارك الرمز، والطلاب يضغطون «انضمّ»",
    "cap_en": "Share the code; students tap Join"
   },
@@ -792,8 +777,8 @@
      "ms": 2200
     }
    ],
-   "say_ar": "وفي «لوحة المعلّم» فصلُك كلُّه بين يديك: الطلاب، والنشيطون، ومتوسطُ المراحل، والدقّة، ومن يحتاج إلى متابعة.",
-   "say_en": "The teacher dashboard shows your class at a glance: students, who's active, average stage reached, accuracy, and who needs follow-up.",
+   "say_ar": "وفي «لوحة المعلّم» فصلُك بين يديك: الطلاب، والنشيطون، ومتوسطُ المراحل، والدقّة، ومن يحتاج إلى متابعة.",
+   "say_en": "The teacher dashboard shows your class at a glance: students, active learners, average stages passed, accuracy, and who needs follow-up.",
    "cap_ar": "الفصلُ كلُّه بين يديك",
    "cap_en": "Your class at a glance"
   },
@@ -815,7 +800,7 @@
      "ms": 2200
     }
    ],
-   "say_ar": "ثم توزيعُ الطلاب على المراحل، والدقّةُ في كلّ نوع سؤال؛ والأشرطةُ الحمراء تدلّ على مهاراتٍ تحتاج إلى تدريبٍ جماعي.",
+   "say_ar": "ثم توزيعُ الطلاب على المراحل، والدقّةُ في كلّ نوع؛ والأحمرُ مهارةٌ تحتاج إلى تدريبٍ جماعي.",
    "say_en": "Then stage distribution and accuracy by question type; red bars flag skills to practice as a class.",
    "cap_ar": "الأحمر: مهارةٌ تحتاج إلى تدريبٍ جماعي",
    "cap_en": "Red bars: skills to practice together"
@@ -850,8 +835,8 @@
      "target": "#modal-close"
     }
    ],
-   "say_ar": "وهذه أكثرُ ما يُخطئ فيه فصلك. اضغط أيَّها لترى شرحَه، واجعله موضوعَ درسك المقبل.",
-   "say_en": "These are the items your class misses most. Tap one for its explanation, and make it your next lesson.",
+   "say_ar": "وهذه أكثرُ أخطاء فصلك؛ اضغط أيَّها لترى شرحَه، واجعله درسَك المقبل.",
+   "say_en": "These are the items your class misses most. Tap one for its explanation and make it your next lesson.",
    "cap_ar": "أكثر ما يُخطئ فيه الفصل",
    "cap_en": "What your class misses most"
   },
@@ -885,8 +870,8 @@
      "ms": 1800
     }
    ],
-   "say_ar": "واضغط اسمَ طالبٍ يحتاج إلى متابعة، فترى محاولاتِه ومواطنَ ضعفه، وفي آخر ذلك اقتراحٌ تربويٌّ تبدأ به.",
-   "say_en": "Tap a student who needs follow-up to see their attempts and weak spots, ending with a teaching suggestion.",
+   "say_ar": "واضغط اسمَ طالبٍ متعثّر، فترى محاولاتِه ومواطنَ ضعفه، واقتراحاً تربويّاً.",
+   "say_en": "Tap a struggling student to see their attempts, weak spots, and a teaching suggestion to start with.",
    "cap_ar": "تفاصيل الطالب واقتراحٌ تربوي",
    "cap_en": "Student detail and a teaching suggestion"
   },
@@ -900,6 +885,10 @@
      "target": "#modal-close"
     },
     {
+     "op": "scrollTo",
+     "target": "#t-csv"
+    },
+    {
      "op": "wait",
      "ms": 500
     },
@@ -909,7 +898,7 @@
     },
     {
      "op": "wait",
-     "ms": 1200
+     "ms": 2000
     }
    ],
    "say_ar": "ولك أن تصدّر بياناتِ الفصل في ملفّ CSV.",
@@ -932,11 +921,10 @@
      "ms": 1500
     }
    ],
-   "say_ar": "هذا هو النهج: درسٌ، فبطاقات، فنصوصٌ تسمعها وتستزيد منها، فاختبار؛ ثم تدريبٌ حرّ ومِحَكٌّ لكتابتك. فابدأ يومَك الأوّل، و«إنّ من البيان لسحراً».",
-   "say_en": "That's the routine: lesson, flashcards, texts with audio and «Istizada», then the test; plus free practice and the Touchstone for your writing. Start your first day today.",
+   "say_ar": "هذا النهج: درسٌ، فبطاقات، فنصوص، فاختبار؛ ثم تدريبٌ حرّ، ومِحَكٌّ لكتابتك. فابدأ يومَك الأوّل.",
+   "say_en": "That's the routine: lesson, flashcards, texts with audio and «Istizada», then the test; plus free practice and the Touchstone for your writing. Start today.",
    "cap_ar": "ابدأ يومك الأوّل الآن",
    "cap_en": "Start your first day today"
   }
- ],
- "pace": 0.8
+ ]
 }

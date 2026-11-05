@@ -1,0 +1,326 @@
+{
+ "id": "promo",
+ "title_ar": "الذائقة العربية: من الدخيل إلى الفصيح",
+ "title_en": "Arabic Taste: From Calque to Classical",
+ "scenes": [
+  {
+   "id": "hook",
+   "go": "",
+   "card": {
+    "ar_title": "أتكتبُ العربيّة… أم تترجمُها؟",
+    "ar_sub": "أعربيٌّ ما تكتب، أم عَرَنجيٌّ هجين؟",
+    "en_title": "Writing Arabic… or translating it?",
+    "en_sub": "Real Arabic, or a hybrid copied from English?"
+   },
+   "steps": [
+    {
+     "op": "wait",
+     "ms": 3000
+    }
+   ],
+   "say_ar": "أتكتبُ العربيّةَ… أم تترجمُها عن الإنجليزيّة وأنت لا تشعر؟",
+   "say_en": "Are you writing Arabic, or translating it from English without even noticing?",
+   "cap_ar": "أتكتبُ العربيّة… أم تترجمُها؟",
+   "cap_en": "Writing Arabic, or translating it?"
+  },
+  {
+   "id": "checker-run",
+   "go": "#checker",
+   "steps": [
+    {
+     "op": "type",
+     "target": "#checker-input",
+     "value": "تلعب القراءةُ دوراً كبيراً في تقويم اللسان، وقد تمّ إثباتُ ذلك من خلال التجربة."
+    },
+    {
+     "op": "click",
+     "target": "#checker-run"
+    },
+    {
+     "op": "wait",
+     "ms": 700
+    },
+    {
+     "op": "highlight",
+     "target": "#checker-output mark"
+    },
+    {
+     "op": "wait",
+     "ms": 1000
+    }
+   ],
+   "say_ar": "اكتبْ جملتَك في «المِحَكّ»، واضغطْ «افحص النص»، فيكشفُ لك التراكيبَ الدخيلةَ الشائعةَ في الحال.",
+   "say_en": "Type any sentence into the Checker and hit Check. Common borrowed phrases light up instantly.",
+   "cap_ar": "المِحَكّ يكشف الدخيل الشائع في الحال",
+   "cap_en": "The Checker flags borrowed phrasing instantly"
+  },
+  {
+   "id": "checker-fix",
+   "go": "#checker",
+   "keep": true,
+   "steps": [
+    {
+     "op": "scrollTo",
+     "target": ".findings li"
+    },
+    {
+     "op": "highlight",
+     "target": ".findings li"
+    },
+    {
+     "op": "wait",
+     "ms": 600
+    },
+    {
+     "op": "click",
+     "target": ".findings .more-btn"
+    },
+    {
+     "op": "wait",
+     "ms": 900
+    },
+    {
+     "op": "scrollTo",
+     "target": "#modal .shahid"
+    },
+    {
+     "op": "highlight",
+     "target": "#modal .shahid"
+    },
+    {
+     "op": "wait",
+     "ms": 1200
+    }
+   ],
+   "say_ar": "ثمّ يردُّك إلى البديل الفصيح: «للقراءةِ أثرٌ في تقويم اللسان»، ويأتيك بشاهده من كتاب الله: ﴿فَانظُرْ إِلَىٰ آثَارِ رَحْمَتِ اللَّهِ﴾.",
+   "say_en": "Instead of the English-style “plays a role in”, it gives the classical “has an effect on”, backed by the Quran: “So look at the effects of God’s mercy.”",
+   "cap_ar": "البديل الفصيح وشاهده من القرآن",
+   "cap_en": "The classical fix, with its Quranic witness"
+  },
+  {
+   "id": "dictionary",
+   "go": "#dict",
+   "steps": [
+    {
+     "op": "select",
+     "target": "#dict-cat",
+     "value": "istiara"
+    },
+    {
+     "op": "wait",
+     "ms": 700
+    },
+    {
+     "op": "highlight",
+     "target": "#dict-list .entry"
+    },
+    {
+     "op": "wait",
+     "ms": 800
+    },
+    {
+     "op": "scroll",
+     "value": "450"
+    },
+    {
+     "op": "wait",
+     "ms": 900
+    }
+   ],
+   "say_ar": "وعلى منهج كتاب «العَرَنجيّة» لأحمد الغامدي، يضمُّ المعجمُ خمسَمئةٍ وثمانيةً وعشرين مدخلاً، لأكثرها أصلُه الإنجليزيّ، ولكلٍّ منها بديلُه الفصيح.",
+   "say_en": "Built on Ahmad al-Ghamdi's book Al-Aranjiyya, the dictionary holds 528 entries, from borrowed metaphors to foreign words, most with their English source, and each with its classical alternative.",
+   "cap_ar": "٥٢٨ مدخلاً على منهج «العرنجية»",
+   "cap_en": "528 entries, based on the book Al-Aranjiyya"
+  },
+  {
+   "id": "texts",
+   "go": "#texts",
+   "steps": [
+    {
+     "op": "type",
+     "target": "#texts-search",
+     "value": "آية الكرسي"
+    },
+    {
+     "op": "wait",
+     "ms": 800
+    },
+    {
+     "op": "highlight",
+     "target": "#texts-list .text-card"
+    },
+    {
+     "op": "click",
+     "target": "#texts-list .speak.quran"
+    },
+    {
+     "op": "wait",
+     "ms": 1500
+    },
+    {
+     "op": "more",
+     "value": "text:آية الكرسي"
+    },
+    {
+     "op": "wait",
+     "ms": 2200
+    }
+   ],
+   "say_ar": "ولأنّ الذائقةَ تُكتسَبُ بالسماع، جمعنا خمسَمئةٍ وسبعةً وتسعين نصّاً من خمسة عصور، والقرآنُ فيها بتلاوة الشيخ الحُصَريّ، ولكلِّ نصٍّ «استزادةٌ» في معانيه.",
+   "say_en": "A good ear comes from listening, so we gathered 597 texts from five eras, with the Quran recited by Sheikh al-Husary, and a deep-dive into every text.",
+   "cap_ar": "٥٩٧ نصاً وتلاوة الحصري واستزادة",
+   "cap_en": "597 texts, al-Husary's recitation, deep-dives"
+  },
+  {
+   "id": "student",
+   "go": "#level-1",
+   "steps": [
+    {
+     "op": "click",
+     "target": ".tab[data-tab=entries]"
+    },
+    {
+     "op": "wait",
+     "ms": 600
+    },
+    {
+     "op": "click",
+     "target": "#start-cards"
+    },
+    {
+     "op": "wait",
+     "ms": 900
+    },
+    {
+     "op": "click",
+     "target": "#fc-flip"
+    },
+    {
+     "op": "wait",
+     "ms": 1500
+    },
+    {
+     "op": "click",
+     "target": "#fc-know"
+    },
+    {
+     "op": "wait",
+     "ms": 800
+    }
+   ],
+   "say_ar": "أيُّها الطالب: سبعُ مراحلَ متدرّجة، فيها دروسٌ، وبطاقاتٌ تقلبُها بلمسة، ونصوصٌ واختبارات، وفي آخرها «شهادةُ ذائق».",
+   "say_en": "For students: seven guided stages with lessons, flashcards, texts and tests, and a certificate waiting at the end.",
+   "cap_ar": "سبع مراحل تنتهي بشهادة ذائق",
+   "cap_en": "7 stages, then your certificate"
+  },
+  {
+   "id": "practice",
+   "go": "#practice",
+   "steps": [
+    {
+     "op": "select",
+     "target": "#pr-type",
+     "value": "spot"
+    },
+    {
+     "op": "wait",
+     "ms": 800
+    },
+    {
+     "op": "highlight",
+     "target": ".q-box"
+    },
+    {
+     "op": "wait",
+     "ms": 900
+    },
+    {
+     "op": "answer"
+    },
+    {
+     "op": "wait",
+     "ms": 1500
+    }
+   ],
+   "say_ar": "وتدرّبْ حُرّاً بعشرةِ أنواعٍ من الأسئلة: المِسِ الكلمةَ الدخيلةَ في الجملة، فتعرفَ بديلَها.",
+   "say_en": "Practise freely with ten question types. Tap the borrowed word in a sentence, and learn its classical alternative.",
+   "cap_ar": "عشرة أنواع من الأسئلة: المس الدخيل",
+   "cap_en": "Ten question types: spot the borrowed word"
+  },
+  {
+   "id": "teacher",
+   "go": "#teacher",
+   "mock": "teacher",
+   "steps": [
+    {
+     "op": "highlight",
+     "target": "#teacher-view .code"
+    },
+    {
+     "op": "wait",
+     "ms": 700
+    },
+    {
+     "op": "highlight",
+     "target": ".kpis"
+    },
+    {
+     "op": "wait",
+     "ms": 800
+    },
+    {
+     "op": "scrollTo",
+     "target": ".students"
+    },
+    {
+     "op": "highlight",
+     "target": "#t-rows tr"
+    },
+    {
+     "op": "wait",
+     "ms": 800
+    },
+    {
+     "op": "click",
+     "target": "#t-rows tr"
+    },
+    {
+     "op": "wait",
+     "ms": 1500
+    },
+    {
+     "op": "highlight",
+     "target": "#modal"
+    },
+    {
+     "op": "wait",
+     "ms": 1000
+    }
+   ],
+   "say_ar": "وأنت أيُّها المعلّم: ينضمُّ طلّابُك برمزٍ من ستّة أحرف، وتُبصرُ دقّتَهم، وأكثرَ ما يخطئون فيه، وتوجيهاً لكلّ طالب.",
+   "say_en": "For teachers: students join your class with a six-letter code, and you see their accuracy, the items they miss most, and a teaching tip for each student.",
+   "cap_ar": "لوحة المعلّم: رمز الفصل ودقة كل طالب",
+   "cap_en": "Teacher dashboard: class code and every student's accuracy"
+  },
+  {
+   "id": "cta",
+   "go": "",
+   "card": {
+    "ar_title": "الذائقة العربية",
+    "ar_sub": "مجّانية في الحاسوب والهاتف · motqenacademy-droid.github.io/arabic",
+    "en_title": "Arabic Taste",
+    "en_sub": "Free on computer and phone · motqenacademy-droid.github.io/arabic"
+   },
+   "steps": [
+    {
+     "op": "wait",
+     "ms": 4000
+    }
+   ],
+   "say_ar": "للطالبِ والوالدِ والمعلّمِ ومحبِّ العربيّة: «الذائقةُ العربيّة» مجّانيّةٌ في متصفّحك وهاتفك. ادخلْها الآن من الرابط، فالفصاحةُ ذائقةٌ تُكتسَب.",
+   "say_en": "For students, parents, teachers and all who love Arabic: Arabic Taste is free in your browser and on your phone. Visit the link on screen and start today. Eloquence is a taste you can acquire.",
+   "cap_ar": "ابدأ مجّاناً: motqenacademy-droid.github.io/arabic",
+   "cap_en": "Start free: motqenacademy-droid.github.io/arabic"
+  }
+ ]
+}

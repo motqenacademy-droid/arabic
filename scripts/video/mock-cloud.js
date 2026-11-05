@@ -33,7 +33,17 @@ const Cloud = (() => {
       { qtype: "better", total: 180, ok: 158 }, { qtype: "judge", total: 90, ok: 71 }, { qtype: "fus", total: 140, ok: 109 },
       { qtype: "spot", total: 120, ok: 66 }, { qtype: "rewrite", total: 48, ok: 21 }, { qtype: "complete", total: 70, ok: 52 },
     ],
-    studentDetail: async () => ({
+    studentDetail: async (sid) => sid === "s2" ? ({
+      answers: [
+        { qtype: "spot", item: "تمّ + مصدر (تمّ افتتاحُ…)", item_kind: "dict", ok: false },
+        { qtype: "fus", item: "تمّ + مصدر (تمّ افتتاحُ…)", item_kind: "dict", ok: false },
+        { qtype: "better", item: "أكّدَ على", item_kind: "dict", ok: false },
+        { qtype: "rewrite", item: "أكّدَ على", item_kind: "dict", ok: false },
+        { qtype: "better", item: "بالنسبة لـ…", item_kind: "dict", ok: true },
+        { qtype: "judge", item: "سوف لن", item_kind: "dict", ok: false },
+      ],
+      attempts: [{ level: 1, score: 6, total: 12, created_at: iso(11) }, { level: 1, score: 5, total: 12, created_at: iso(13) }],
+    }) : ({
       answers: [
         { qtype: "spot", item: "تمّ + مصدر (تمّ افتتاحُ…)", item_kind: "dict", ok: false },
         { qtype: "fus", item: "تمّ + مصدر (تمّ افتتاحُ…)", item_kind: "dict", ok: false },

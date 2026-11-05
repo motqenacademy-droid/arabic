@@ -1,0 +1,5 @@
+node_modules/
+video/build/
+video/out/
+.tts-cache/
+tts-jobs.json

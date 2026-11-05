@@ -711,6 +711,36 @@
     a.download = "dhaiqa-class.csv"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   }
 
+  /* ===== الفيديوهات (تُنتَج عند النشر في videos/) ===== */
+  (async () => {
+    let list = [];
+    try { const r = await fetch("videos/index.json", { cache: "no-cache" }); if (r.ok) list = await r.json(); } catch (e) { /* لا فيديوهات */ }
+    const have = new Set(list.map((v) => v.file));
+    if (!have.size) return;
+    const sec = $("#videos-section"); sec.hidden = false;
+    let vlang = "ar";
+    const phone = matchMedia("(max-width: 760px)").matches;
+    function load() {
+      $$(".vid", sec).forEach((fig) => {
+        const b = fig.dataset.board;
+        const opts = [b === "promo" && phone ? `${b}-${vlang}-portrait` : null, `${b}-${vlang}-landscape`, `${b}-ar-landscape`].filter(Boolean);
+        const name = opts.find((n) => have.has(n + ".mp4"));
+        fig.hidden = !name; if (!name) return;
+        const v = fig.querySelector("video");
+        if (!v.src.endsWith(name + ".mp4")) { v.src = `videos/${name}.mp4`; v.poster = `videos/${name}.jpg`; }
+        v.classList.toggle("portrait", name.endsWith("portrait"));
+        const a = fig.querySelector("a"); a.href = `videos/${name}.mp4`; a.textContent = vlang === "ar" ? "تنزيل" : "Download";
+        const t = fig.querySelector("b"); t.textContent = t.dataset[vlang]; t.dir = vlang === "ar" ? "rtl" : "ltr";
+      });
+    }
+    $("#vid-lang").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-vlang]"); if (!b) return;
+      vlang = b.dataset.vlang; $$("#vid-lang .chip").forEach((c) => c.classList.toggle("active", c === b));
+      $$(".vid video", sec).forEach((v) => v.pause()); load();
+    });
+    load();
+  })();
+
   /* ===== التوجيه ===== */
   const ALIASES = { principles: "home", about: "home", quiz: "practice" };
   function route() {

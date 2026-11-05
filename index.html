@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#17395a">
   <title>الذائقة العربية</title>
   <meta name="description" content="منصة تعليمية متكاملة لتهذيب الذائقة العربية وتقويم اللسان، على منهج كتاب «العرنجية»، بنصوص العصر الجاهلي والنبوي والراشدي والأموي والعباسي، مع حسابات للطلاب ولوحة متابعة للمعلّم.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/amiri-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/noto-naskh-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mobile.css">
 </head>
@@ -68,6 +68,27 @@
               <blockquote id="daily-text"></blockquote>
               <p class="daily-meta" id="daily-meta"></p>
               <div class="card-actions" id="daily-actions"></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="videos-section" hidden>
+        <div class="wrap">
+          <h2>شاهد</h2>
+          <p class="section-lead">تعرّف المنصّة في دقيقة، ثم تعلّم استعمالها خطوةً خطوة.</p>
+          <div class="filters" id="vid-lang">
+            <button class="chip active" data-vlang="ar">العربية</button>
+            <button class="chip" data-vlang="en" lang="en" dir="ltr">English</button>
+          </div>
+          <div class="vid-grid">
+            <figure class="card vid" data-board="promo">
+              <video controls preload="none" playsinline></video>
+              <figcaption><b data-ar="الفيديو الدعائي" data-en="Promo video">الفيديو الدعائي</b><a class="small" download>تنزيل</a></figcaption>
+            </figure>
+            <figure class="card vid" data-board="tutorial">
+              <video controls preload="none" playsinline></video>
+              <figcaption><b data-ar="الفيديو التعليمي: كيف تستعمل المنصّة" data-en="Tutorial: how to use the platform">الفيديو التعليمي: كيف تستعمل المنصّة</b><a class="small" download>تنزيل</a></figcaption>
             </figure>
           </div>
         </div>

@@ -502,3 +502,11 @@ table.students tbody tr:hover { background: var(--bg-alt); }
   .certificate { box-shadow: none; } .section { padding: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .level-card { transition: none; } }
+
+/* ===== الفيديوهات ===== */
+.vid-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 18px; align-items: start; }
+.vid { margin: 0; padding: 10px; overflow: hidden; }
+.vid video { display: block; width: 100%; border-radius: 10px; background: #0f2a44; aspect-ratio: 16 / 9; }
+.vid video.portrait { aspect-ratio: 9 / 16; max-height: 78vh; margin: 0 auto; width: auto; max-width: 100%; }
+.vid figcaption { display: flex; align-items: center; gap: 10px; padding: 10px 6px 2px; }
+.vid figcaption a { margin-inline-start: auto; }

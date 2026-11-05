@@ -41,13 +41,44 @@ jobs:
           pip install --quiet "edge-tts>=6.1.10"
           node scripts/tts-list.js > tts-jobs.json
           python3 scripts/tts-gen.py tts-jobs.json .tts-cache
+      - name: استعادة الفيديوهات السابقة
+        id: vcache
+        uses: actions/cache/restore@v4
+        with:
+          path: video/out
+          key: videos-v1-${{ hashFiles('video/*.json', 'scripts/video/**', 'css/**', 'fonts/**') }}
+      - name: إنتاج الفيديوهات الدعائية والتعليمية
+        id: render
+        if: steps.vcache.outputs.cache-hit != 'true' && hashFiles('video/promo.json') != ''
+        continue-on-error: true
+        timeout-minutes: 75
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          npm install --no-save --no-package-lock --silent playwright@1.63.0
+          npx playwright install --with-deps chromium
+          bash scripts/video/build-all.sh
+      - name: حفظ الفيديوهات
+        if: steps.render.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: video/out
+          key: ${{ steps.vcache.outputs.cache-primary-key }}
+      - name: رفع الفيديوهات للتنزيل المباشر
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: video/out/*.mp4
+          if-no-files-found: ignore
       - name: تجهيز ملفات الموقع
         run: |
           mkdir -p _site/audio/tts
-          cp -r index.html css js _site/
+          cp -r index.html css js fonts _site/
           [ -d audio ] && cp -r audio/. _site/audio/ || true
           cp .tts-cache/*.mp3 .tts-cache/index.json _site/audio/tts/ 2>/dev/null || echo "[]" > _site/audio/tts/index.json
           echo "تسجيلات: $(ls _site/audio/tts/*.mp3 2>/dev/null | wc -l)"
+          mkdir -p _site/videos
+          cp video/out/*.mp4 video/out/*.jpg video/out/index.json _site/videos/ 2>/dev/null || echo "[]" > _site/videos/index.json
+          echo "فيديوهات: $(ls _site/videos/*.mp4 2>/dev/null | wc -l)"
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

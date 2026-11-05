@@ -7,7 +7,7 @@ import edge_tts
 
 board_path, lang, out = sys.argv[1], sys.argv[2], sys.argv[3]
 board = json.load(open(board_path, encoding="utf-8"))
-VOICE = {"ar": ("ar-SA-HamedNeural", "-4%"), "en": ("en-US-AndrewNeural", "+0%")}[lang]
+VOICE = {"ar": ("ar-SA-HamedNeural", "+6%"), "en": ("en-US-AndrewNeural", "+0%")}[lang]
 os.makedirs(out, exist_ok=True)
 
 async def one(scene):

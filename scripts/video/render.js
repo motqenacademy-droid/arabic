@@ -37,7 +37,7 @@ function narrationFile(s) { const f = path.join(AUDIO, `${BOARD.id}-${LANG}-${s.
 function narrationDur(s) {
   const f = narrationFile(s); if (f) return probe(f);
   const words = say(s).trim().split(/\s+/).filter(Boolean).length;
-  return words ? words / (LANG === "ar" ? 2.25 : 2.6) : 0;
+  return words ? words / (LANG === "ar" ? 1.55 : 2.3) : 0; // معايَرة على أصوات Hamed (+6%) وAndrew
 }
 /* تقسيم الشرح المكتوب إلى جمل موقوتة بنسبة طولها */
 function captionPlan(s, dur) {

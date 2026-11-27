@@ -3,7 +3,7 @@ Run: python3 -I build.py   (from anywhere)"""
 import re, os, subprocess, zipfile, shutil, unicodedata, html
 from collections import OrderedDict
 
-ROOT = "/tmp/claude-0/-home-user-arabic/e911d197-6400-5f77-acf5-0cb3dbe70b83/scratchpad"
+ROOT = os.environ.get("THESIS_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D, B = f"{ROOT}/drafts", f"{ROOT}/build"
 
 PB = '\n```{=openxml}\n<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n```\n'

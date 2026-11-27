@@ -1,4 +1,4 @@
-# جدول التحقق من إحالات الفصل الأول (ch1a) – المراجعة الثانية
+# جدول التحقق من إحالات الفصل الأول (ch1a) – المراجعة الثالثة
 
 | الحاشية | الموضع (رابط الشاملة / ملف PDF وصفحته / رابط الويب) |
 |---|---|
@@ -53,229 +53,270 @@
 | 49 | https://ar.wikipedia.org/wiki/عبد_العزيز_بن_باز |
 | 50 | https://shamela.ws/book/21537/12703 |
 | 51 | https://shamela.ws/book/2300/7201 |
-| 52 | https://shamela.ws/book/2300/7201 |
-| 53 | https://shamela.ws/book/1681/7594 |
-| 54 | https://ar.wikipedia.org/wiki/يوسف_القرضاوي |
-| 55 | https://shamela.ws/book/9087/1332 ; https://shamela.ws/book/9087/1333 |
-| 56 | https://shamela.ws/book/9087/1334 |
-| 57 | https://ar.wikipedia.org/wiki/علي_جمعة_(عالم_دين) |
-| 58 | https://www.dar-alifta.org/ar/fatwa/details/12919/ |
-| 59 | https://shamela.ws/book/8502/8 |
-| 60 | ht/Shakhsiyyah_3 — PDF ص29-30 |
-| 61 | ht/Ijtemaey — PDF ص36 |
-| 62 | ht/Ijtemaey — PDF ص36-37 |
-| 63 | ht/Ijtemaey — PDF ص37 |
-| 64 | ht/Ijtemaey — PDF ص37-38 |
-| 65 | ht/Ijtemaey — PDF ص38 |
-| 66 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص325 |
-| 67 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص325-327 |
-| 68 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص333 |
-| 69 | ht/MuqaddimatV2_24112018.pdf — PDF ص169 |
-| 70 | ht/Osos — PDF ص12-13 |
-| 71 | ht/MuqaddimatV2_24112018.pdf — PDF ص173-174 |
-| 72 | ht/Ijtemaey — PDF ص34 |
-| 73 | https://shamela.ws/book/117359/496 |
-| 74 | https://shamela.ws/book/117359/3276 |
-| 75 | https://shamela.ws/book/117359/3276 (حاشية) |
-| 76 | https://shamela.ws/book/12286/3908 |
-| 77 | ht/Ijtemaey — PDF ص12 |
-| 78 | https://shamela.ws/book/10517/829 |
-| 79 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص335 |
-| 80 | ht/Shakhsiyyah2 — PDF ص54 |
-| 81 | https://shamela.ws/book/1681/5357 |
-| 82 | https://shamela.ws/book/12286/3588 |
-| 83 | https://shamela.ws/book/2186/40 |
-| 84 | https://shamela.ws/book/17798/380 |
-| 85 | https://shamela.ws/book/21537/12449 |
-| 86 | https://shamela.ws/book/17798/381 |
-| 87 | https://shamela.ws/book/1681/185 |
-| 88 | https://shamela.ws/book/1673/681 |
-| 89 | https://shamela.ws/book/12286/4109 |
-| 90 | https://shamela.ws/book/1673/680 |
-| 91 | https://shamela.ws/book/17798/2635 |
-| 92 | https://shamela.ws/book/1681/9743 |
-| 93 | https://shamela.ws/book/117359/3080 |
-| 94 | https://shamela.ws/book/117359/3080 (حاشية) |
-| 95 | https://shamela.ws/book/12286/4729 |
-| 96 | https://shamela.ws/book/2186/40 |
-| 97 | https://shamela.ws/book/12286/7087 |
-| 98 | https://shamela.ws/book/2186/40 |
-| 99 | https://shamela.ws/book/12286/6254 |
-| 100 | https://shamela.ws/book/12286/5255 |
-| 101 | https://shamela.ws/book/21582/1317 |
-| 102 | https://shamela.ws/book/12286/5418 |
-| 103 | https://shamela.ws/book/1727/26 |
-| 104 | https://shamela.ws/book/12286/451 |
-| 105 | https://shamela.ws/book/13055/555 |
-| 106 | https://shamela.ws/book/12286/4849 |
-| 107 | https://shamela.ws/book/151180/46 |
-| 108 | https://shamela.ws/book/11430/18199 |
-| 109 | https://shamela.ws/book/2186/40 |
-| 110 | https://shamela.ws/book/2186/40 |
-| 111 | ht/Shakhsiyyah_1 — PDF ص226 |
-| 112 | ht/Shakhsiyyah_1 — PDF ص227 |
-| 113 | https://shamela.ws/book/12286/6852 |
-| 114 | https://shamela.ws/book/2186/40 ; https://shamela.ws/book/622/7022 ; https://shamela.ws/book/622/7023 |
-| 115 | https://shamela.ws/book/12286/3947 |
-| 116 | https://shamela.ws/book/22881/358 ; https://shamela.ws/book/22881/359 |
-| 117 | https://shamela.ws/book/12286/3850 |
-| 118 | https://shamela.ws/book/12286/1597 |
-| 119 | https://shamela.ws/book/22881/359 |
-| 120 | https://shamela.ws/book/21582/1317 |
-| 121 | https://shamela.ws/book/12286/2864 |
-| 122 | https://shamela.ws/book/12286/368 |
-| 123 | https://shamela.ws/book/17798/2635 |
-| 124 | https://shamela.ws/book/12286/2817 |
-| 125 | https://shamela.ws/book/12286/5035 |
-| 126 | https://shamela.ws/book/21719/119 |
-| 127 | https://shamela.ws/book/8502/7 |
-| 128 | ht/MuqaddimatV2_24112018.pdf — PDF ص158، 161 |
-| 129 | ht/MuqaddimatV2_24112018.pdf — PDF ص168 |
-| 130 | ht/Osos — PDF ص11 |
-| 131 | ht/Osos — PDF ص62 |
-| 132 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص287 |
-| 133 | https://www.mohamah.net/law/?p=10079 |
-| 134 | dl/edu2017.pdf ص15 (الوقائع الفلسطينية ع132) |
-| 135 | dl/edu2017.pdf ص16 |
-| 136 | dl/edu2017.pdf ص10 |
-| 137 | https://shamela.ws/book/8502/7 |
-| 138 | ht/PL_Booklet_Manahej_2016 — PDF ص4-5 |
-| 139 | https://www.mohamah.net/law/?p=10079 |
-| 140 | https://shamela.ws/book/10875/3377 |
-| 141 | https://shamela.ws/book/12286/3167 |
-| 142 | https://shamela.ws/book/8463/2272 |
-| 143 | ht/Iqtisadi — PDF ص83 |
-| 144 | ht/Iqtisadi — PDF ص98 |
-| 145 | ht/MuqaddimatV2_24112018.pdf — PDF ص130 |
-| 146 | https://shamela.ws/book/27107/53258 |
-| 147 | ht/Iqtisadi — PDF ص83 |
-| 148 | https://shamela.ws/book/811/3664 ; https://shamela.ws/book/811/3665 |
-| 149 | https://shamela.ws/book/587/1546 ; https://shamela.ws/book/587/1547 |
-| 150 | https://shamela.ws/book/98138/1653 |
-| 151 | https://shamela.ws/book/12286/2801 |
-| 152 | https://shamela.ws/book/98138/1653 (حاشية) |
-| 153 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص286-287 |
-| 154 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص263 |
-| 155 | https://shamela.ws/book/21719/119 |
-| 156 | https://shamela.ws/book/12286/7694 |
-| 157 | https://shamela.ws/book/10443/865 |
+| 52 | https://binbaz.org.sa/fatwas/6951 |
+| 53 | https://binbaz.org.sa/fatwas/4916 |
+| 54 | https://binbaz.org.sa/fatwas/7544 |
+| 55 | https://shamela.ws/book/2300/7201 |
+| 56 | https://shamela.ws/book/1681/7594 |
+| 57 | https://ar.wikipedia.org/wiki/يوسف_القرضاوي |
+| 58 | https://shamela.ws/book/9087/1332 ; https://shamela.ws/book/9087/1333 |
+| 59 | https://shamela.ws/book/9087/1334 |
+| 60 | https://ar.wikipedia.org/wiki/علي_جمعة_(عالم_دين) |
+| 61 | https://www.dar-alifta.org/ar/fatwa/details/12919/ |
+| 62 | https://ar.wikipedia.org/wiki/شوقي_علام |
+| 63 | https://www.dar-alifta.org/ar/fatwa/details/14284/ |
+| 64 | https://shamela.ws/book/8502/8 |
+| 65 | ht/Shakhsiyyah_3 — PDF ص29-30 |
+| 66 | https://islamqa.info/ar/answers/280182 |
+| 67 | https://islamqa.info/ar/answers/265423 |
+| 68 | ht/Ijtemaey — PDF ص36 |
+| 69 | ht/Ijtemaey — PDF ص36-37 |
+| 70 | ht/Ijtemaey — PDF ص37 |
+| 71 | ht/Ijtemaey — PDF ص37-38 |
+| 72 | ht/Ijtemaey — PDF ص38 |
+| 73 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص325 |
+| 74 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص325-327 |
+| 75 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص333 |
+| 76 | ht/MuqaddimatV2_24112018.pdf — PDF ص169 |
+| 77 | ht/Osos — PDF ص12-13 |
+| 78 | ht/MuqaddimatV2_24112018.pdf — PDF ص173-174 |
+| 79 | epub/secs/Section0001.txt |
+| 80 | epub/secs/Section0072.txt |
+| 81 | ht/Ijtemaey_25.09_.24_.pdf — PDF ص30 |
+| 82 | ht/Ijtemaey_25.09_.24_.pdf — PDF ص95 |
+| 83 | epub/secs/Section0064.txt |
+| 84 | epub/secs/Section0066.txt |
+| 85 | epub/secs/Section0067.txt |
+| 86 | epub/secs/Section0068.txt |
+| 87 | epub/secs/Section0056.txt |
+| 88 | epub/secs/Section0069.txt |
+| 89 | epub/secs/Section0070.txt |
+| 90 | epub/secs/Section0070.txt |
+| 91 | epub/secs/Section0071.txt |
+| 92 | ht/Ijtemaey — PDF ص34 |
+| 93 | https://shamela.ws/book/117359/496 |
+| 94 | https://shamela.ws/book/117359/3276 |
+| 95 | https://shamela.ws/book/117359/3276 (حاشية) |
+| 96 | https://shamela.ws/book/12286/3908 |
+| 97 | ht/Ijtemaey — PDF ص12 |
+| 98 | https://shamela.ws/book/10517/829 |
+| 99 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص335 |
+| 100 | ht/Shakhsiyyah2 — PDF ص54 |
+| 101 | https://shamela.ws/book/1681/5357 |
+| 102 | https://shamela.ws/book/12286/3588 |
+| 103 | https://shamela.ws/book/2186/40 |
+| 104 | https://shamela.ws/book/17798/380 |
+| 105 | https://shamela.ws/book/21537/12449 |
+| 106 | https://shamela.ws/book/17798/381 |
+| 107 | https://shamela.ws/book/1681/185 |
+| 108 | https://shamela.ws/book/1673/681 |
+| 109 | https://shamela.ws/book/12286/4109 |
+| 110 | https://shamela.ws/book/1673/680 |
+| 111 | https://shamela.ws/book/17798/2635 |
+| 112 | https://shamela.ws/book/1681/9743 |
+| 113 | https://shamela.ws/book/117359/3080 |
+| 114 | https://shamela.ws/book/117359/3080 (حاشية) |
+| 115 | https://shamela.ws/book/12286/4729 |
+| 116 | https://shamela.ws/book/2186/40 |
+| 117 | https://shamela.ws/book/12286/7087 |
+| 118 | https://shamela.ws/book/2186/40 |
+| 119 | https://shamela.ws/book/12286/6254 |
+| 120 | https://shamela.ws/book/12286/5255 |
+| 121 | https://shamela.ws/book/21582/1317 |
+| 122 | https://shamela.ws/book/12286/5418 |
+| 123 | https://shamela.ws/book/1727/26 |
+| 124 | https://shamela.ws/book/12286/451 |
+| 125 | https://shamela.ws/book/13055/555 |
+| 126 | https://shamela.ws/book/12286/4849 |
+| 127 | https://shamela.ws/book/151180/46 |
+| 128 | https://shamela.ws/book/11430/18199 |
+| 129 | https://shamela.ws/book/2186/40 |
+| 130 | https://shamela.ws/book/2186/40 |
+| 131 | ht/Shakhsiyyah_1 — PDF ص226 |
+| 132 | ht/Shakhsiyyah_1 — PDF ص227 |
+| 133 | https://www.dar-alifta.org/ar/articles/details/5775/ |
+| 134 | https://shamela.ws/book/12286/6852 |
+| 135 | https://shamela.ws/book/2186/40 ; https://shamela.ws/book/622/7022 ; https://shamela.ws/book/622/7023 |
+| 136 | https://shamela.ws/book/12286/3947 |
+| 137 | https://shamela.ws/book/22881/358 ; https://shamela.ws/book/22881/359 |
+| 138 | https://shamela.ws/book/12286/3850 |
+| 139 | https://shamela.ws/book/12286/1597 |
+| 140 | https://shamela.ws/book/22881/359 |
+| 141 | https://shamela.ws/book/21582/1317 |
+| 142 | https://shamela.ws/book/12286/2864 |
+| 143 | https://shamela.ws/book/12286/368 |
+| 144 | https://shamela.ws/book/17798/2635 |
+| 145 | https://shamela.ws/book/12286/2817 |
+| 146 | https://shamela.ws/book/12286/5035 |
+| 147 | https://shamela.ws/book/21719/119 |
+| 148 | https://shamela.ws/book/8502/7 |
+| 149 | ht/MuqaddimatV2_24112018.pdf — PDF ص158، 161 |
+| 150 | ht/MuqaddimatV2_24112018.pdf — PDF ص168 |
+| 151 | ht/Osos — PDF ص11 |
+| 152 | ht/Osos — PDF ص62 |
+| 153 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص287 |
+| 154 | https://www.mohamah.net/law/?p=10079 |
+| 155 | dl/edu2017.pdf ص15 (الوقائع الفلسطينية ع132) |
+| 156 | dl/edu2017.pdf ص16 |
+| 157 | dl/edu2017.pdf ص10 |
 | 158 | https://shamela.ws/book/8502/7 |
-| 159 | https://shamela.ws/book/1727/4663 |
-| 160 | https://shamela.ws/book/117359/2465 ; https://shamela.ws/book/117359/2466 |
-| 161 | https://shamela.ws/book/12286/542 |
-| 162 | https://shamela.ws/book/25794/360 ; https://shamela.ws/book/25794/361 |
-| 163 | https://shamela.ws/book/1681/10651 |
-| 164 | https://shamela.ws/book/1681/10541 |
-| 165 | https://shamela.ws/book/1681/10818 |
-| 166 | https://shamela.ws/book/8463/2272 ; ht/Iqtisadi — PDF ص89 |
-| 167 | https://shamela.ws/book/1727/4409 |
-| 168 | ht/Iqtisadi — PDF ص89 |
-| 169 | ht/Shakhsiyyah2 — PDF ص132-133 |
-| 170 | ht/Shakhsiyyah2 — PDF ص327 |
-| 171 | ht/Shakhsiyyah2 — PDF ص327-328 |
-| 172 | ht/Shakhsiyyah2 — PDF ص325 |
-| 173 | https://shamela.ws/book/27107/53073 |
-| 174 | https://shamela.ws/book/1681/3602 |
-| 175 | https://shamela.ws/book/8502/8 |
-| 176 | https://shamela.ws/book/811/3664 ; https://shamela.ws/book/811/3665 |
-| 177 | ht/Shakhsiyyah2_02012025.pdf — PDF ص325 |
-| 178 | https://shamela.ws/book/27107/53258 |
-| 179 | https://www.aljazeera.net/politics/2025/11/26/فلسطين-تعليم-إضراب-السلطة-رواتب-أزمة |
-| 180 | https://shamela.ws/book/1687/547 |
-| 181 | https://staff-beta.najah.edu/media/published_research/2025/06/22/مشروعية_الإضراب_عن_العمل_في_فلسطين-معدل.doc |
-| 182 | بحث شرف والعطا (الرابط في الحاشية 111) |
-| 183 | https://www.aljazeera.net/news/2016/2/23/آلاف-المعلمين-يحتجون-بالضفة-رغم |
-| 184 | https://www.aljazeera.net/news/2023/2/20/الضفة-الغربية-إضراب-المعلمين |
-| 185 | https://www.aljazeera.net/politics/2025/11/26/فلسطين-تعليم-إضراب-السلطة-رواتب-أزمة |
-| 186 | dl/edu2017.pdf ص16 |
-| 187 | dl/edu2017.pdf ص10 |
-| 188 | https://ar.wikisource.org/wiki/القانون_الأساسي_الفلسطيني_المعدل_2003 |
-| 189 | https://www.mohamah.net/law/?p=10277 |
-| 190 | https://shamela.ws/book/36436/2 ; https://shamela.ws/book/36436/3 |
-| 191 | https://shamela.ws/book/36436/211 ; https://shamela.ws/book/36436/212 |
-| 192 | https://alquds.com/en/posts/52820 |
-| 193 | https://shamela.ws/book/1435/2337 |
-| 194 | https://shamela.ws/book/12286/3373 |
-| 195 | https://shamela.ws/book/1066/228 |
-| 196 | https://shamela.ws/book/8463/2278 |
-| 197 | https://shamela.ws/book/26332/8634 |
-| 198 | https://shamela.ws/book/27107/62593 |
-| 199 | https://shamela.ws/book/8502/7 |
-| 200 | https://shamela.ws/book/12286/2116 |
-| 201 | https://shamela.ws/book/12286/3597 |
-| 202 | https://shamela.ws/book/1666/64 |
-| 203 | (من بيانات البحث على موقع جامعة النجاح) |
-| 204 | https://ar.wikipedia.org/wiki/عبد_الكريم_زيدان |
-| 205 | بحث شرف والعطا |
-| 206 | بحث شرف والعطا |
-| 207 | https://shamela.ws/book/27107/62593 |
-| 208 | https://shamela.ws/book/27107/62344 |
-| 209 | https://shamela.ws/book/27107/63686 |
-| 210 | https://shamela.ws/book/663/3682 |
-| 211 | https://shamela.ws/book/98138/1732 |
-| 212 | https://shamela.ws/book/98138/1732 (حاشية) |
-| 213 | https://ar.wikipedia.org/wiki/محمد_ناصر_الدين_الألباني |
-| 214 | بحث شرف والعطا (فتوى دار الإفتاء الفلسطينية 1936 لم يُطلع عليها مباشرة) |
-| 215 | — (لا ترجمة موثقة) |
-| 216 | https://shamela.ws/book/26332/8634 |
-| 217 | https://shamela.ws/book/36436/209 ; https://shamela.ws/book/36436/210 |
-| 218 | https://shamela.ws/book/26332/8634 |
-| 219 | https://shamela.ws/book/27107/53258 |
-| 220 | https://shamela.ws/book/36436/210 ; https://shamela.ws/book/36436/211 |
-| 221 | https://shamela.ws/book/36436/3 |
-| 222 | https://shamela.ws/book/10517/698 |
-| 223 | https://shamela.ws/book/36436/209 |
-| 224 | ht/Shakhsiyyah2 — PDF ص326 |
-| 225 | ht/Shakhsiyyah2 — PDF ص327 |
-| 226 | ht/Shakhsiyyah2 — PDF ص327-328 |
-| 227 | ht/Iqtisadi — PDF ص39 |
-| 228 | ht/MuqaddimatV2_24112018.pdf — PDF ص130 |
-| 229 | ht/MuqaddimatV2_24112018.pdf — PDF ص131 |
-| 230 | — (لا ترجمة موثقة) |
-| 231 | https://hizb-ut-tahrir.info/ar/index.php/alraiah-newspaper/86502.html |
-| 232 | ht/Shakhsiyyah_3 — PDF ص29-30 |
-| 233 | https://shamela.ws/book/27107/63686 |
-| 234 | https://shamela.ws/book/27107/53073 |
-| 235 | https://shamela.ws/book/27107/62593 |
-| 236 | https://shamela.ws/book/1687/1761 |
-| 237 | https://shamela.ws/book/11620/485 |
-| 238 | https://www.unesco.org/ar/days/teachers |
-| 239 | https://en.nn.najah.edu/3G2/ |
-| 240 | https://shamela.ws/book/25794/18922 |
-| 241 | https://shamela.ws/book/10757/891 |
-| 242 | https://shamela.ws/book/12286/5912 |
-| 243 | https://shamela.ws/book/1435/3381 |
-| 244 | dl/edu2017.pdf ص10 |
-| 245 | https://shamela.ws/book/12286/166 |
-| 246 | https://shamela.ws/book/21720/33 ; https://shamela.ws/book/21720/34 |
-| 247 | https://shamela.ws/book/21720/573 |
-| 248 | https://shamela.ws/book/107/1019 ; https://shamela.ws/book/107/1020 |
-| 249 | https://shamela.ws/book/27107/5409 |
-| 250 | https://shamela.ws/book/8381/1846 |
-| 251 | https://shamela.ws/book/12286/4876 |
-| 252 | https://shamela.ws/book/8476/692 |
-| 253 | https://shamela.ws/book/9087/1700 ; https://shamela.ws/book/9087/1701 |
-| 254 | https://shamela.ws/book/1681/1552 |
-| 255 | https://shamela.ws/book/11620/490 |
-| 256 | https://shamela.ws/book/117359/966 |
-| 257 | https://shamela.ws/book/117359/966 (حاشية) |
-| 258 | https://shamela.ws/book/1681/4269 |
-| 259 | https://shamela.ws/book/117359/3383 |
-| 260 | https://shamela.ws/book/117359/3383 (حاشية) |
-| 261 | https://shamela.ws/book/12286/286 |
-| 262 | https://shamela.ws/book/7861/21470 |
-| 263 | https://shamela.ws/book/11620/517 |
-| 264 | https://www.dar-alifta.org/ar/fatwa/details/12918 |
-| 265 | https://www.sayidaty.net/node/862686 |
-| 266 | https://shamela.ws/book/14242/171 |
-| 267 | ht/Shakhsiyyah2 — PDF ص54 |
-| 268 | ht/Ijtemaey — PDF ص10 |
-| 269 | https://shamela.ws/book/12286/3032 |
-| 270 | https://shamela.ws/book/8608/455 ; https://shamela.ws/book/8608/456 |
-| 271 | https://shamela.ws/book/11620/620 |
-| 272 | https://shamela.ws/book/11620/624 ; https://shamela.ws/book/11620/625 |
-| 273 | https://shamela.ws/book/1673/1521 |
-| 274 | https://shamela.ws/book/1435/3381 |
-| 275 | https://shamela.ws/book/8476/692 |
+| 159 | ht/PL_Booklet_Manahej_2016 — PDF ص4-5 |
+| 160 | epub/secs/Section0160.txt |
+| 161 | epub/secs/Section0210.txt |
+| 162 | https://www.mohamah.net/law/?p=10079 |
+| 163 | https://shamela.ws/book/10875/3377 |
+| 164 | https://shamela.ws/book/12286/3167 |
+| 165 | https://shamela.ws/book/8463/2272 |
+| 166 | ht/Iqtisadi — PDF ص83 |
+| 167 | ht/Iqtisadi — PDF ص98 |
+| 168 | ht/MuqaddimatV2_24112018.pdf — PDF ص130 |
+| 169 | https://shamela.ws/book/27107/53258 |
+| 170 | ht/Iqtisadi — PDF ص83 |
+| 171 | https://shamela.ws/book/811/3664 ; https://shamela.ws/book/811/3665 |
+| 172 | https://shamela.ws/book/587/1546 ; https://shamela.ws/book/587/1547 |
+| 173 | https://shamela.ws/book/98138/1653 |
+| 174 | https://shamela.ws/book/12286/2801 |
+| 175 | https://shamela.ws/book/98138/1653 (حاشية) |
+| 176 | https://ar.wikipedia.org/wiki/إبراهيم_السكران |
+| 177 | https://kalemtayeb.com/safahat/item/60338 |
+| 178 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص286-287 |
+| 179 | ht/Muqaddimat_V1_25.09_.2026_.pdf — PDF ص263 |
+| 180 | https://shamela.ws/book/21719/119 |
+| 181 | https://shamela.ws/book/12286/7694 |
+| 182 | https://shamela.ws/book/10443/865 |
+| 183 | https://shamela.ws/book/8502/7 |
+| 184 | https://shamela.ws/book/1727/4663 |
+| 185 | https://shamela.ws/book/117359/2465 ; https://shamela.ws/book/117359/2466 |
+| 186 | https://shamela.ws/book/12286/542 |
+| 187 | https://shamela.ws/book/25794/360 ; https://shamela.ws/book/25794/361 |
+| 188 | https://shamela.ws/book/1681/10651 |
+| 189 | https://shamela.ws/book/1681/10541 |
+| 190 | https://shamela.ws/book/1681/10818 |
+| 191 | https://shamela.ws/book/8463/2272 ; ht/Iqtisadi — PDF ص89 |
+| 192 | https://shamela.ws/book/1727/4409 |
+| 193 | ht/Iqtisadi — PDF ص89 |
+| 194 | ht/Shakhsiyyah2 — PDF ص132-133 |
+| 195 | ht/Shakhsiyyah2 — PDF ص327 |
+| 196 | epub/secs/Section0021.txt |
+| 197 | epub/secs/Section0210.txt |
+| 198 | ht/Shakhsiyyah2 — PDF ص327-328 |
+| 199 | ht/Shakhsiyyah2 — PDF ص325 |
+| 200 | https://shamela.ws/book/27107/53073 |
+| 201 | https://shamela.ws/book/1681/3602 |
+| 202 | https://shamela.ws/book/8502/8 |
+| 203 | https://shamela.ws/book/811/3664 ; https://shamela.ws/book/811/3665 |
+| 204 | ht/Shakhsiyyah2_02012025.pdf — PDF ص325 |
+| 205 | https://shamela.ws/book/27107/53258 |
+| 206 | https://www.aljazeera.net/politics/2025/11/26/فلسطين-تعليم-إضراب-السلطة-رواتب-أزمة |
+| 207 | https://shamela.ws/book/1687/547 |
+| 208 | https://staff-beta.najah.edu/media/published_research/2025/06/22/مشروعية_الإضراب_عن_العمل_في_فلسطين-معدل.doc |
+| 209 | بحث شرف والعطا (الرابط في الحاشية 111) |
+| 210 | https://www.aljazeera.net/news/2016/2/23/آلاف-المعلمين-يحتجون-بالضفة-رغم |
+| 211 | https://www.aljazeera.net/news/2023/2/20/الضفة-الغربية-إضراب-المعلمين |
+| 212 | https://www.aljazeera.net/politics/2025/11/26/فلسطين-تعليم-إضراب-السلطة-رواتب-أزمة |
+| 213 | dl/edu2017.pdf ص16 |
+| 214 | dl/edu2017.pdf ص10 |
+| 215 | https://ar.wikisource.org/wiki/القانون_الأساسي_الفلسطيني_المعدل_2003 |
+| 216 | https://www.mohamah.net/law/?p=10277 |
+| 217 | https://shamela.ws/book/36436/2 ; https://shamela.ws/book/36436/3 |
+| 218 | https://shamela.ws/book/36436/211 ; https://shamela.ws/book/36436/212 |
+| 219 | https://alquds.com/en/posts/52820 |
+| 220 | https://shamela.ws/book/1435/2337 |
+| 221 | https://shamela.ws/book/12286/3373 |
+| 222 | https://shamela.ws/book/1066/228 |
+| 223 | https://shamela.ws/book/8463/2278 |
+| 224 | https://shamela.ws/book/26332/8634 |
+| 225 | https://shamela.ws/book/27107/62593 |
+| 226 | https://shamela.ws/book/8502/7 |
+| 227 | https://shamela.ws/book/12286/2116 |
+| 228 | https://shamela.ws/book/12286/3597 |
+| 229 | https://shamela.ws/book/1666/64 |
+| 230 | (من بيانات البحث على موقع جامعة النجاح) |
+| 231 | https://ar.wikipedia.org/wiki/عبد_الكريم_زيدان |
+| 232 | بحث شرف والعطا |
+| 233 | بحث شرف والعطا |
+| 234 | https://shamela.ws/book/27107/62593 |
+| 235 | https://shamela.ws/book/27107/62344 |
+| 236 | https://shamela.ws/book/27107/63686 |
+| 237 | https://www.islamweb.net/en/fatwa/84718 |
+| 238 | https://www.islamweb.net/en/fatwa/84820 |
+| 239 | https://fiqh.islamonline.net/en/going-on-strike-is-it-permissible |
+| 240 | https://fiqh.islamonline.net/en/going-on-strike-is-it-permissible |
+| 241 | https://shamela.ws/book/663/3682 |
+| 242 | https://shamela.ws/book/98138/1732 |
+| 243 | https://shamela.ws/book/98138/1732 (حاشية) |
+| 244 | https://ar.wikipedia.org/wiki/محمد_ناصر_الدين_الألباني |
+| 245 | بحث شرف والعطا (فتوى دار الإفتاء الفلسطينية 1936 لم يُطلع عليها مباشرة) |
+| 246 | — (لا ترجمة موثقة) |
+| 247 | https://shamela.ws/book/26332/8634 |
+| 248 | https://shamela.ws/book/36436/209 ; https://shamela.ws/book/36436/210 |
+| 249 | https://shamela.ws/book/26332/8634 |
+| 250 | https://shamela.ws/book/27107/53258 |
+| 251 | https://shamela.ws/book/36436/210 ; https://shamela.ws/book/36436/211 |
+| 252 | https://shamela.ws/book/36436/3 |
+| 253 | https://shamela.ws/book/10517/698 |
+| 254 | https://shamela.ws/book/36436/209 |
+| 255 | ht/Shakhsiyyah2 — PDF ص326 |
+| 256 | ht/Shakhsiyyah2 — PDF ص327 |
+| 257 | ht/Shakhsiyyah2 — PDF ص327-328 |
+| 258 | ht/Iqtisadi — PDF ص39 |
+| 259 | ht/MuqaddimatV2_24112018.pdf — PDF ص130 |
+| 260 | ht/MuqaddimatV2_24112018.pdf — PDF ص131 |
+| 261 | — (لا ترجمة موثقة) |
+| 262 | https://hizb-ut-tahrir.info/ar/index.php/alraiah-newspaper/86502.html |
+| 263 | ht/Shakhsiyyah_3 — PDF ص29-30 |
+| 264 | epub/secs/Section0029.txt |
+| 265 | epub/secs/Section0029.txt |
+| 266 | epub/secs/Section0030.txt |
+| 267 | epub/secs/Section0143.txt |
+| 268 | https://shamela.ws/book/27107/63686 |
+| 269 | https://shamela.ws/book/27107/53073 |
+| 270 | https://shamela.ws/book/27107/62593 |
+| 271 | https://shamela.ws/book/1687/1761 |
+| 272 | https://shamela.ws/book/11620/485 |
+| 273 | https://www.unesco.org/ar/days/teachers |
+| 274 | https://en.nn.najah.edu/3G2/ |
+| 275 | https://shamela.ws/book/25794/18922 |
+| 276 | https://shamela.ws/book/10757/891 |
+| 277 | https://shamela.ws/book/12286/5912 |
+| 278 | https://shamela.ws/book/1435/3381 |
+| 279 | dl/edu2017.pdf ص10 |
+| 280 | https://shamela.ws/book/12286/166 |
+| 281 | https://shamela.ws/book/21720/33 ; https://shamela.ws/book/21720/34 |
+| 282 | https://shamela.ws/book/21720/573 |
+| 283 | https://shamela.ws/book/107/1019 ; https://shamela.ws/book/107/1020 |
+| 284 | https://shamela.ws/book/27107/5409 |
+| 285 | https://shamela.ws/book/8381/1846 |
+| 286 | https://shamela.ws/book/12286/4876 |
+| 287 | https://shamela.ws/book/8476/692 |
+| 288 | https://shamela.ws/book/9087/1700 ; https://shamela.ws/book/9087/1701 |
+| 289 | https://shamela.ws/book/1681/1552 |
+| 290 | https://shamela.ws/book/11620/490 |
+| 291 | https://shamela.ws/book/117359/966 |
+| 292 | https://shamela.ws/book/117359/966 (حاشية) |
+| 293 | https://shamela.ws/book/1681/4269 |
+| 294 | https://shamela.ws/book/117359/3383 |
+| 295 | https://shamela.ws/book/117359/3383 (حاشية) |
+| 296 | https://shamela.ws/book/12286/286 |
+| 297 | https://shamela.ws/book/7861/21470 |
+| 298 | https://shamela.ws/book/11620/517 |
+| 299 | https://www.dar-alifta.org/ar/fatwa/details/12918 |
+| 300 | https://www.sayidaty.net/node/862686 |
+| 301 | https://shamela.ws/book/14242/171 |
+| 302 | ht/Shakhsiyyah2 — PDF ص54 |
+| 303 | ht/Ijtemaey — PDF ص10 |
+| 304 | epub/secs/Section0206.txt |
+| 305 | epub/secs/Section0206.txt |
+| 306 | https://shamela.ws/book/1681/10898 |
+| 307 | epub/secs/Section0205.txt |
+| 308 | https://shamela.ws/book/12286/3032 |
+| 309 | https://shamela.ws/book/8608/455 ; https://shamela.ws/book/8608/456 |
+| 310 | https://shamela.ws/book/11620/620 |
+| 311 | https://shamela.ws/book/11620/624 ; https://shamela.ws/book/11620/625 |
+| 312 | https://shamela.ws/book/1673/1521 |
+| 313 | https://islamqa.info/ar/answers/221242 |
+| 314 | https://shamela.ws/book/1435/3381 |
+| 315 | https://shamela.ws/book/8476/692 |
+| 316 | epub/secs/Section0205.txt |
 
-ملاحظة: مسارات ht/ وdl/ نسبية إلى مجلد scratchpad؛ "PDF ص" رقم صفحة ملف PDF، والصفحة المطبوعة المذكورة في الحاشية تُقرأ من أسفل الصفحة (في مقدمة الدستور بقسميها: المطبوعة = PDF ناقص 1). حواشي الترجمة تبدأ بالوسم {ترجمة: ...}، وأغلبها من الأعلام للزركلي (الشاملة، الكتاب 12286).
+ملاحظة: مسارات ht/ وdl/ نسبية إلى مجلد scratchpad؛ "PDF ص" رقم صفحة ملف PDF، والصفحة المطبوعة المذكورة في الحاشية تُقرأ من أسفل الصفحة (في مقدمة الدستور بقسميها: المطبوعة = PDF ناقص 1). حواشي الترجمة تبدأ بالوسم {ترجمة: ...}، وأغلبها من الأعلام للزركلي (الشاملة، الكتاب 12286). مسارات epub/secs/ نسبية إلى مجلد scratchpad (نصوص «الدوسية الفقهية»).

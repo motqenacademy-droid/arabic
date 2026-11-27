@@ -86,160 +86,200 @@
 | 80 | 5 | https://shamela.ws/book/133395/90 ؛ https://shamela.ws/book/133395/91 (ترجمة) |
 | 81 | 5 | ht/Iqtisadi08072019.pdf (PDF ص95-96) |
 | 82 | 5 | ht/Iqtisadi08072019.pdf (PDF ص96-97) |
-| 83 | 5 | ht/Iqtisadi08072019.pdf (PDF ص83) |
-| 84 | 5 | https://shamela.ws/book/21613/3497 |
-| 85 | 5 | https://shamela.ws/book/21537/3880 |
-| 86 | 5 | https://ar.wikipedia.org/wiki/عطية_صقر (ترجمة) |
-| 87 | 5 | https://shamela.ws/book/432/4791 |
-| 88 | 5 | https://shamela.ws/book/27107/63231 |
-| 89 | 5 | https://shamela.ws/book/27107/53931 |
-| 90 | 5 | https://shamela.ws/book/27107/64088 |
-| 91 | 5 | https://shamela.ws/book/894/7000 (ترجمة) |
-| 92 | 5 | https://shamela.ws/book/894/7000 |
-| 93 | 5 | https://shamela.ws/book/26332/8437 |
-| 94 | 5 | https://shamela.ws/book/1726/4969 | https://shamela.ws/book/117359/3028 (الحواشي) |
-| 95 | 5 | https://shamela.ws/book/1435/2337 |
-| 96 | 5 | https://shamela.ws/book/1681/4119 |
-| 97 | 5 | https://shamela.ws/book/8463/4595 |
-| 98 | 5 | https://maqam.najah.edu/legislation/69/item/4154/ |
-| 99 | 5 | https://shamela.ws/book/1727/244 |
-| 100 | 5 | https://shamela.ws/book/12286/5123 (ترجمة) |
-| 101 | 5 | https://shamela.ws/book/11496/710 |
-| 102 | 5 | https://shamela.ws/book/12286/2817 (ترجمة) |
-| 103 | 5 | https://shamela.ws/book/21719/119 |
-| 104 | 5 | ht/Muqaddimat_V1_25.09_.2026_.txt (PDF ص87، المطبوعة 86) |
-| 105 | 5 | ht/Iqtisadi08072019.pdf (PDF ص83) |
-| 106 | 5 | ht/Muqaddimat_V1_25.09_.2026_.txt (PDF ص92، المطبوعة 91) |
-| 107 | 5 | ht/Shakhsiyyah2_02012025.pdf (PDF ص142) |
-| 108 | 6 | https://qudsnet.com/uploads/documents/2020/04/HyJAt.pdf |
-| 109 | 6 | https://binothaimeen.net/content/Biography (ترجمة) |
-| 110 | 6 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص16، 18) |
-| 111 | 6 | https://islamqa.info/ar/130096 |
-| 112 | 6 | https://shamela.ws/book/12286/470 (ترجمة) |
-| 113 | 6 | https://shamela.ws/book/12286/5162 (ترجمة) |
-| 114 | 6 | https://shamela.ws/book/1673/3043 |
-| 115 | 6 | https://shamela.ws/book/12286/4923 (ترجمة) |
-| 116 | 6 | https://shamela.ws/book/20855/4894 |
-| 117 | 6 | https://shamela.ws/book/8463/4594 |
-| 118 | 6 | https://islamqa.info/ar/130096 |
-| 119 | 6 | https://shamela.ws/book/7687/1523 |
-| 120 | 6 | https://shamela.ws/book/27107/61482 |
-| 121 | 6 | https://shamela.ws/book/8381/8818 |
-| 122 | 6 | https://slaati.com/2021/11/18/p1942909.html (ترجمة) |
-| 123 | 6 | https://slaati.com/2021/11/18/p1942909.html |
-| 124 | 6 | https://shamela.ws/book/1727/244 |
-| 125 | 6 | https://shamela.ws/book/1681/4204 |
-| 126 | 6 | https://shamela.ws/book/1681/7795 |
-| 127 | 6 | https://shamela.ws/book/1681/9743 | https://shamela.ws/book/1681/112 |
-| 128 | 6 | https://shamela.ws/book/305/64 ؛ https://shamela.ws/book/305/66 |
-| 129 | 6 | https://shamela.ws/book/12286/1405 ؛ https://shamela.ws/book/12286/5633 (ترجمة) |
-| 130 | 6 | https://shamela.ws/book/12286/4934 (ترجمة) |
-| 131 | 6 | https://shamela.ws/book/1424/5435 | https://shamela.ws/book/305/64 (الحواشي) |
-| 132 | 6 | https://shamela.ws/book/1727/4660 |
-| 133 | 6 | https://shamela.ws/book/1711/2776 |
-| 134 | 6 | https://shamela.ws/book/11496/710 |
-| 135 | 6 | https://shamela.ws/book/7687/1523 |
-| 136 | 6 | ht/Osos08122016.pdf (PDF ص50-51) |
-| 137 | 6 | https://shamela.ws/book/12293/10837 |
-| 138 | 6 | https://shamela.ws/book/1681/10651 |
-| 139 | 6 | https://shamela.ws/book/1681/10818 |
-| 140 | 6 | https://maqam.najah.edu/legislation/69/item/4153/ |
-| 141 | 6 | https://shamela.ws/book/27107/61482 |
-| 142 | 6 | https://qudsnet.com/uploads/documents/2020/04/HyJAt.pdf |
-| 143 | 6 | ht/Osos08122016.pdf (PDF ص50-51) |
-| 144 | 6 | https://shamela.ws/book/21719/119 |
-| 145 | 6 | https://islamqa.info/ar/answers/431903 |
-| 146 | 6 | https://shamela.ws/book/7687/1523 |
-| 147 | 6 | ht/Shakhsiyyah2_02012025.pdf (PDF ص132-133) |
-| 148 | 6 | ht/Hokom12102022.pdf (PDF ص244-245) |
-| 149 | 6 | ht/Shakhsiyyah_3_23.07_.2025_.pdf (PDF ص434-440) |
-| 150 | 6 | https://shamela.ws/book/21719/119 |
-| 151 | 7 | https://shamela.ws/book/1687/206 |
-| 152 | 7 | https://shamela.ws/book/21613/2191 |
-| 153 | 7 | https://shamela.ws/book/499/4104 |
-| 154 | 7 | https://maqam.najah.edu/legislation/53/item/3217/ |
-| 155 | 7 | https://maqam.najah.edu/legislation/53/item/3220/ |
-| 156 | 7 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص11) |
-| 157 | 7 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص18) |
-| 158 | 7 | https://maqam.najah.edu/legislation/33/item/2555/ |
-| 159 | 7 | https://www.ecoi.net/de/dokument/2051286.html |
-| 160 | 7 | https://shamela.ws/book/1726/666 | https://shamela.ws/book/117359/496 (الحواشي) |
-| 161 | 7 | https://shamela.ws/book/1435/720 |
-| 162 | 7 | https://shamela.ws/book/12286/2638 (ترجمة) |
-| 163 | 7 | https://shamela.ws/book/9944/30160 ؛ https://shamela.ws/book/9944/30161 |
-| 164 | 7 | https://shamela.ws/book/499/4104 |
-| 165 | 7 | https://shamela.ws/book/12286/6397 (ترجمة) |
-| 166 | 7 | https://shamela.ws/book/12286/3339 (ترجمة) |
-| 167 | 7 | https://shamela.ws/book/21611/3561 |
-| 168 | 7 | https://shamela.ws/book/12286/546 (ترجمة) |
-| 169 | 7 | https://shamela.ws/book/6910/3915 |
-| 170 | 7 | https://shamela.ws/book/21613/4008 |
-| 171 | 7 | https://shamela.ws/book/11430/5712 |
-| 172 | 7 | https://shamela.ws/book/6910/3915 |
-| 173 | 7 | https://shamela.ws/book/6910/3915 |
-| 174 | 7 | https://shamela.ws/book/12286/6192 (ترجمة) |
-| 175 | 7 | https://shamela.ws/book/21613/347 |
-| 176 | 7 | https://shamela.ws/book/12286/2903 (ترجمة) |
-| 177 | 7 | https://shamela.ws/book/10906/10421 ؛ https://shamela.ws/book/10906/10422 (ترجمة) |
-| 178 | 7 | https://shamela.ws/book/12320/741 ؛ https://shamela.ws/book/12320/742 |
-| 179 | 7 | https://shamela.ws/book/12286/549 (ترجمة) |
-| 180 | 7 | https://shamela.ws/book/8463/4093 |
-| 181 | 7 | https://shamela.ws/book/1681/10229 ؛ https://shamela.ws/book/1681/10230 |
-| 182 | 7 | https://shamela.ws/book/12286/4700 (ترجمة) |
-| 183 | 7 | https://shamela.ws/book/1673/7165 |
-| 184 | 7 | https://shamela.ws/book/1673/7165 |
-| 185 | 7 | https://shamela.ws/book/6730/164 ؛ https://shamela.ws/book/6730/165 (ترجمة) |
-| 186 | 7 | https://shamela.ws/book/1673/7166 |
-| 187 | 7 | https://shamela.ws/book/767/4777 |
-| 188 | 7 | https://shamela.ws/book/21613/347 |
-| 189 | 7 | https://shamela.ws/book/499/4104 |
-| 190 | 7 | https://shamela.ws/book/12286/3032 (ترجمة) |
-| 191 | 7 | https://shamela.ws/book/8608/459 |
-| 192 | 7 | https://shamela.ws/book/1727/6588 |
-| 193 | 7 | https://shamela.ws/book/1727/5984 |
-| 194 | 7 | https://shamela.ws/book/7687/1523 |
-| 195 | 7 | https://shamela.ws/book/1727/6537 | https://shamela.ws/book/1727/5587 |
-| 196 | 7 | https://shamela.ws/book/1435/3327 ؛ https://shamela.ws/book/1435/3328 |
+| 83 | 5 | epub/secs/Section0116.txt |
+| 84 | 5 | ht/Iqtisadi08072019.pdf (PDF ص83) |
+| 85 | 5 | https://shamela.ws/book/21613/3497 |
+| 86 | 5 | https://shamela.ws/book/21537/3880 |
+| 87 | 5 | https://ar.wikipedia.org/wiki/عطية_صقر (ترجمة) |
+| 88 | 5 | https://shamela.ws/book/432/4791 |
+| 89 | 5 | https://shamela.ws/book/27107/63231 |
+| 90 | 5 | https://shamela.ws/book/27107/53931 |
+| 91 | 5 | https://shamela.ws/book/27107/64088 |
+| 92 | 5 | https://shamela.ws/book/894/7000 (ترجمة) |
+| 93 | 5 | https://shamela.ws/book/894/7000 |
+| 94 | 5 | https://shamela.ws/book/26332/8437 |
+| 95 | 5 | epub/secs/Section0100.txt |
+| 96 | 5 | epub/secs/Section0102.txt |
+| 97 | 5 | https://aliftaa.jo/Question2.aspx?QuestionId=860 |
+| 98 | 5 | https://islamqa.info/ar/answers/106504 |
+| 99 | 5 | https://shamela.ws/book/1726/4969 | https://shamela.ws/book/117359/3028 (الحواشي) |
+| 100 | 5 | https://shamela.ws/book/1435/2337 |
+| 101 | 5 | https://shamela.ws/book/1681/4119 |
+| 102 | 5 | https://shamela.ws/book/8463/4595 |
+| 103 | 5 | https://maqam.najah.edu/legislation/69/item/4154/ |
+| 104 | 5 | epub/secs/Section0143.txt |
+| 105 | 5 | https://shamela.ws/book/12762/10820 |
+| 106 | 5 | https://shamela.ws/book/27107/61482 |
+| 107 | 5 | https://shamela.ws/book/1727/244 |
+| 108 | 5 | https://shamela.ws/book/12286/5123 (ترجمة) |
+| 109 | 5 | https://shamela.ws/book/11496/710 |
+| 110 | 5 | https://shamela.ws/book/12286/2817 (ترجمة) |
+| 111 | 5 | https://shamela.ws/book/21719/119 |
+| 112 | 5 | ht/Muqaddimat_V1_25.09_.2026_.txt (PDF ص87، المطبوعة 86) |
+| 113 | 5 | ht/Iqtisadi08072019.pdf (PDF ص83) |
+| 114 | 5 | epub/secs/Section0100.txt |
+| 115 | 5 | ht/Muqaddimat_V1_25.09_.2026_.txt (PDF ص92، المطبوعة 91) |
+| 116 | 5 | ht/Shakhsiyyah2_02012025.pdf (PDF ص142) |
+| 117 | 6 | https://qudsnet.com/uploads/documents/2020/04/HyJAt.pdf |
+| 118 | 6 | https://binothaimeen.net/content/Biography (ترجمة) |
+| 119 | 6 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص16، 18) |
+| 120 | 6 | https://islamqa.info/ar/130096 |
+| 121 | 6 | https://shamela.ws/book/12286/470 (ترجمة) |
+| 122 | 6 | https://shamela.ws/book/12286/5162 (ترجمة) |
+| 123 | 6 | https://shamela.ws/book/1673/3043 |
+| 124 | 6 | https://shamela.ws/book/12286/4923 (ترجمة) |
+| 125 | 6 | https://shamela.ws/book/20855/4894 |
+| 126 | 6 | https://shamela.ws/book/8463/4594 |
+| 127 | 6 | epub/secs/Section0210.txt |
+| 128 | 6 | https://islamqa.info/ar/130096 |
+| 129 | 6 | https://shamela.ws/book/7687/1523 |
+| 130 | 6 | https://shamela.ws/book/27107/61482 |
+| 131 | 6 | https://shamela.ws/book/8381/8818 |
+| 132 | 6 | https://slaati.com/2021/11/18/p1942909.html (ترجمة) |
+| 133 | 6 | https://slaati.com/2021/11/18/p1942909.html |
+| 134 | 6 | https://aliftaa.jo/Question2.aspx?QuestionId=942 |
+| 135 | 6 | https://www.islamweb.net/ar/fatwa/159645/ |
+| 136 | 6 | https://www.islamweb.net/ar/fatwa/345568/ |
+| 137 | 6 | https://shamela.ws/book/1727/244 |
+| 138 | 6 | epub/secs/Section0206.txt |
+| 139 | 6 | https://shamela.ws/book/1681/4204 |
+| 140 | 6 | https://shamela.ws/book/1681/7795 |
+| 141 | 6 | https://shamela.ws/book/1681/9743 | https://shamela.ws/book/1681/112 |
+| 142 | 6 | https://shamela.ws/book/305/64 ؛ https://shamela.ws/book/305/66 |
+| 143 | 6 | https://shamela.ws/book/12286/1405 ؛ https://shamela.ws/book/12286/5633 (ترجمة) |
+| 144 | 6 | https://shamela.ws/book/12286/4934 (ترجمة) |
+| 145 | 6 | https://shamela.ws/book/1424/5435 | https://shamela.ws/book/305/64 (الحواشي) |
+| 146 | 6 | https://shamela.ws/book/1727/4660 |
+| 147 | 6 | https://shamela.ws/book/1711/2776 |
+| 148 | 6 | https://shamela.ws/book/11496/710 |
+| 149 | 6 | https://shamela.ws/book/7687/1523 |
+| 150 | 6 | ht/Osos08122016.pdf (PDF ص50-51) |
+| 151 | 6 | https://shamela.ws/book/12293/10837 |
+| 152 | 6 | https://www.islamweb.net/ar/fatwa/114402/ |
+| 153 | 6 | https://shamela.ws/book/1681/10651 |
+| 154 | 6 | https://shamela.ws/book/1681/10818 |
+| 155 | 6 | https://maqam.najah.edu/legislation/69/item/4153/ |
+| 156 | 6 | epub/secs/Section0195.txt |
+| 157 | 6 | https://qudsnet.com/uploads/documents/2020/04/HyJAt.pdf |
+| 158 | 6 | ht/Osos08122016.pdf (PDF ص50-51) |
+| 159 | 6 | https://shamela.ws/book/21719/119 |
+| 160 | 6 | https://www.islamweb.net/ar/fatwa/214393/ |
+| 161 | 6 | https://islamqa.info/ar/answers/431903 |
+| 162 | 6 | https://shamela.ws/book/7687/1523 |
+| 163 | 6 | ht/Shakhsiyyah2_02012025.pdf (PDF ص132-133) |
+| 164 | 6 | ht/Hokom12102022.pdf (PDF ص244-245) |
+| 165 | 6 | ht/Shakhsiyyah_3_23.07_.2025_.pdf (PDF ص434-440) |
+| 166 | 6 | epub/secs/Section0020.txt |
+| 167 | 6 | epub/secs/Section0021.txt |
+| 168 | 6 | epub/secs/Section0102.txt |
+| 169 | 6 | https://shamela.ws/book/21719/119 |
+| 170 | 7 | https://shamela.ws/book/1687/206 |
+| 171 | 7 | https://shamela.ws/book/21613/2191 |
+| 172 | 7 | https://shamela.ws/book/499/4104 |
+| 173 | 7 | https://maqam.najah.edu/legislation/53/item/3217/ |
+| 174 | 7 | https://maqam.najah.edu/legislation/53/item/3220/ |
+| 175 | 7 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص11) |
+| 176 | 7 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص18) |
+| 177 | 7 | https://maqam.najah.edu/legislation/33/item/2555/ |
+| 178 | 7 | https://www.ecoi.net/de/dokument/2051286.html |
+| 179 | 7 | https://shamela.ws/book/1726/666 | https://shamela.ws/book/117359/496 (الحواشي) |
+| 180 | 7 | https://shamela.ws/book/1435/720 |
+| 181 | 7 | https://shamela.ws/book/12286/2638 (ترجمة) |
+| 182 | 7 | https://shamela.ws/book/9944/30160 ؛ https://shamela.ws/book/9944/30161 |
+| 183 | 7 | https://shamela.ws/book/499/4104 |
+| 184 | 7 | https://shamela.ws/book/12286/6397 (ترجمة) |
+| 185 | 7 | https://shamela.ws/book/12286/3339 (ترجمة) |
+| 186 | 7 | https://shamela.ws/book/21611/3561 |
+| 187 | 7 | https://shamela.ws/book/12286/546 (ترجمة) |
+| 188 | 7 | https://shamela.ws/book/6910/3915 |
+| 189 | 7 | https://shamela.ws/book/21613/4008 |
+| 190 | 7 | https://shamela.ws/book/11430/5712 |
+| 191 | 7 | https://shamela.ws/book/6910/3915 |
+| 192 | 7 | https://shamela.ws/book/6910/3915 |
+| 193 | 7 | https://shamela.ws/book/12286/6192 (ترجمة) |
+| 194 | 7 | https://shamela.ws/book/21613/347 |
+| 195 | 7 | https://shamela.ws/book/12286/2903 (ترجمة) |
+| 196 | 7 | https://shamela.ws/book/10906/10421 ؛ https://shamela.ws/book/10906/10422 (ترجمة) |
 | 197 | 7 | https://shamela.ws/book/12320/741 ؛ https://shamela.ws/book/12320/742 |
-| 198 | 7 | https://shamela.ws/book/6910/3915 |
-| 199 | 7 | https://shamela.ws/book/21613/4008 |
-| 200 | 7 | https://shamela.ws/book/21613/2210 |
-| 201 | 7 | https://shamela.ws/book/499/4106 |
-| 202 | 7 | https://shamela.ws/book/8463/4093 |
-| 203 | 7 | https://shamela.ws/book/12286/5255 (ترجمة) |
-| 204 | 7 | https://shamela.ws/book/8463/4093 |
-| 205 | 7 | https://shamela.ws/book/12286/660 (ترجمة) |
-| 206 | 7 | https://shamela.ws/book/21604/1987 |
-| 207 | 7 | https://shamela.ws/book/21613/4008 |
-| 208 | 7 | https://shamela.ws/book/499/4106 |
-| 209 | 7 | https://shamela.ws/book/499/4104 |
-| 210 | 7 | https://shamela.ws/book/767/4777 |
-| 211 | 7 | https://shamela.ws/book/11430/7651 |
-| 212 | 7 | https://shamela.ws/book/6910/3915 |
-| 213 | 7 | https://shamela.ws/book/8463/4093 |
-| 214 | 7 | https://shamela.ws/book/499/4106 |
-| 215 | 7 | https://shamela.ws/book/21613/2210 |
-| 216 | 7 | https://shamela.ws/book/6910/3915 |
-| 217 | 7 | https://shamela.ws/book/767/4777 |
-| 218 | 7 | https://maqam.najah.edu/legislation/33/item/2555/ |
-| 219 | 7 | https://shamela.ws/book/12320/741 ؛ https://shamela.ws/book/12320/742 |
-| 220 | 7 | https://shamela.ws/book/12286/223 (ترجمة) |
-| 221 | 7 | https://shamela.ws/book/2215/932 ؛ https://shamela.ws/book/2215/938 |
-| 222 | 7 | https://ar.wikipedia.org/wiki/عبد_العزيز_بن_باز (ترجمة) |
-| 223 | 7 | https://binbaz.org.sa/fatwas/5991 |
-| 224 | 7 | https://shamela.ws/book/21537/3880 |
-| 225 | 7 | https://islamqa.info/ar/answers/431903 |
-| 226 | 7 | رسالة شهد حسن (صفحة الإجازة)؛ https://fiqh.islamonline.net (ترجمة) |
-| 227 | 7 | https://dspace.alquds.edu/bitstreams/39ea1965-29d9-4fd4-b796-9356847aab5a/download (صفحة العنوان) (ترجمة) |
-| 228 | 7 | https://dspace.alquds.edu/bitstreams/39ea1965-29d9-4fd4-b796-9356847aab5a/download (ص124-125 من المطبوع) |
-| 229 | 7 | https://maqam.najah.edu/legislation/69/item/4155/ |
-| 230 | 7 | https://maqam.najah.edu/legislation/33/item/2555/ |
-| 231 | 7 | https://shamela.ws/book/7687/1523 |
-| 232 | 7 | https://maqam.najah.edu/legislation/53/item/3220/ |
-| 233 | 7 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص18) |
-| 234 | 7 | https://shamela.ws/book/21604/1379 |
-| 235 | 7 | https://ar.wikipedia.org/wiki/عبد_القديم_زلوم (ترجمة) |
-| 236 | 7 | ht/Amwal_15.06_.2024_.pdf (PDF ص115) |
-| 237 | 7 | ht/Ijtemaey_25.09_.24_.pdf (PDF ص142) |
-| 238 | 7 | ht/Muqaddimat_V1_25.09_.2026_.pdf (PDF ص81، 86-87) |
-| 239 | 7 | ht/Shakhsiyyah2_02012025.pdf (PDF ص142) |
+| 198 | 7 | https://shamela.ws/book/12286/549 (ترجمة) |
+| 199 | 7 | https://shamela.ws/book/8463/4093 |
+| 200 | 7 | https://shamela.ws/book/1681/10229 ؛ https://shamela.ws/book/1681/10230 |
+| 201 | 7 | https://shamela.ws/book/12286/4700 (ترجمة) |
+| 202 | 7 | https://shamela.ws/book/1673/7165 |
+| 203 | 7 | https://shamela.ws/book/1673/7165 |
+| 204 | 7 | https://shamela.ws/book/6730/164 ؛ https://shamela.ws/book/6730/165 (ترجمة) |
+| 205 | 7 | https://shamela.ws/book/1673/7166 |
+| 206 | 7 | https://shamela.ws/book/767/4777 |
+| 207 | 7 | https://shamela.ws/book/21613/347 |
+| 208 | 7 | https://shamela.ws/book/499/4104 |
+| 209 | 7 | https://shamela.ws/book/12286/3032 (ترجمة) |
+| 210 | 7 | https://shamela.ws/book/8608/459 |
+| 211 | 7 | https://shamela.ws/book/1727/6588 |
+| 212 | 7 | https://shamela.ws/book/1727/5984 |
+| 213 | 7 | https://shamela.ws/book/7687/1523 |
+| 214 | 7 | https://shamela.ws/book/1727/6537 | https://shamela.ws/book/1727/5587 |
+| 215 | 7 | https://shamela.ws/book/1435/3327 ؛ https://shamela.ws/book/1435/3328 |
+| 216 | 7 | https://shamela.ws/book/12320/741 ؛ https://shamela.ws/book/12320/742 |
+| 217 | 7 | https://shamela.ws/book/6910/3915 |
+| 218 | 7 | https://shamela.ws/book/21613/4008 |
+| 219 | 7 | https://shamela.ws/book/21613/2210 |
+| 220 | 7 | https://shamela.ws/book/499/4106 |
+| 221 | 7 | https://shamela.ws/book/8463/4093 |
+| 222 | 7 | https://shamela.ws/book/12286/5255 (ترجمة) |
+| 223 | 7 | https://shamela.ws/book/8463/4093 |
+| 224 | 7 | https://shamela.ws/book/12286/660 (ترجمة) |
+| 225 | 7 | https://shamela.ws/book/21604/1987 |
+| 226 | 7 | https://shamela.ws/book/21613/4008 |
+| 227 | 7 | https://shamela.ws/book/499/4106 |
+| 228 | 7 | https://shamela.ws/book/499/4104 |
+| 229 | 7 | https://shamela.ws/book/767/4777 |
+| 230 | 7 | https://shamela.ws/book/11430/7651 |
+| 231 | 7 | https://shamela.ws/book/6910/3915 |
+| 232 | 7 | https://shamela.ws/book/8463/4093 |
+| 233 | 7 | https://shamela.ws/book/499/4106 |
+| 234 | 7 | https://shamela.ws/book/21613/2210 |
+| 235 | 7 | https://shamela.ws/book/6910/3915 |
+| 236 | 7 | https://shamela.ws/book/767/4777 |
+| 237 | 7 | https://www.islamweb.net/ar/fatwa/148943/ |
+| 238 | 7 | epub/secs/Section0102.txt |
+| 239 | 7 | ht/Muqaddimat_V1_25.09_.2026_.txt (PDF ص73-75، المطبوعة 72-74) |
+| 240 | 7 | https://maqam.najah.edu/legislation/33/item/2555/ |
+| 241 | 7 | https://shamela.ws/book/12320/741 ؛ https://shamela.ws/book/12320/742 |
+| 242 | 7 | https://shamela.ws/book/12286/223 (ترجمة) |
+| 243 | 7 | https://shamela.ws/book/2215/932 ؛ https://shamela.ws/book/2215/938 |
+| 244 | 7 | epub/secs/Section0020.txt |
+| 245 | 7 | epub/secs/Section0150.txt |
+| 246 | 7 | https://ar.wikipedia.org/wiki/عبد_العزيز_بن_باز (ترجمة) |
+| 247 | 7 | https://binbaz.org.sa/fatwas/5991 |
+| 248 | 7 | https://shamela.ws/book/21537/3880 |
+| 249 | 7 | https://islamqa.info/ar/answers/431903 |
+| 250 | 7 | رسالة شهد حسن (صفحة الإجازة)؛ https://fiqh.islamonline.net (ترجمة) |
+| 251 | 7 | https://dspace.alquds.edu/bitstreams/39ea1965-29d9-4fd4-b796-9356847aab5a/download (صفحة العنوان) (ترجمة) |
+| 252 | 7 | https://dspace.alquds.edu/bitstreams/39ea1965-29d9-4fd4-b796-9356847aab5a/download (ص124-125 من المطبوع) |
+| 253 | 7 | https://dar-alifta.org/ar/ourreligion/details/30 (ترجمة) |
+| 254 | 7 | https://www.dar-alifta.org/ar/fatwa/details/11471 |
+| 255 | 7 | https://islamqa.org/shafii/darul-iftaa-jordan/225665/ (الأصل: aliftaa.jo/Question1En.aspx?QuestionId=1161) |
+| 256 | 7 | https://www.islamweb.net/ar/fatwa/215608/ |
+| 257 | 7 | https://islamqa.info/ar/answers/272027 |
+| 258 | 7 | https://maqam.najah.edu/legislation/69/item/4155/ |
+| 259 | 7 | https://maqam.najah.edu/legislation/33/item/2555/ |
+| 260 | 7 | epub/secs/Section0089.txt |
+| 261 | 7 | https://shamela.ws/book/7687/1523 |
+| 262 | 7 | epub/secs/Section0057.txt |
+| 263 | 7 | epub/secs/Section0060.txt |
+| 264 | 7 | https://maqam.najah.edu/legislation/53/item/3220/ |
+| 265 | 7 | https://maqam.najah.edu/legislation/629/ (ملف PDF للوقائع، ص18) |
+| 266 | 7 | https://www.islamweb.net/ar/fatwa/520258/ |
+| 267 | 7 | https://shamela.ws/book/21604/1379 |
+| 268 | 7 | https://ar.wikipedia.org/wiki/عبد_القديم_زلوم (ترجمة) |
+| 269 | 7 | ht/Amwal_15.06_.2024_.pdf (PDF ص115) |
+| 270 | 7 | https://www.islamweb.net/ar/fatwa/410809/ |
+| 271 | 7 | https://www.islamweb.net/ar/fatwa/470029/ |
+| 272 | 7 | ht/Ijtemaey_25.09_.24_.pdf (PDF ص142) |
+| 273 | 7 | ht/Muqaddimat_V1_25.09_.2026_.pdf (PDF ص81، 86-87) |
+| 274 | 7 | ht/Shakhsiyyah2_02012025.pdf (PDF ص142) |
+| 275 | 7 | epub/secs/Section0060.txt |
+| 276 | 7 | epub/secs/Section0089.txt |
+| 277 | 7 | https://www.dar-alifta.org/ar/fatwa/details/11471 |
+| 278 | 7 | https://www.islamweb.net/ar/fatwa/475696/ |
+| 279 | 7 | https://www.islamweb.net/ar/fatwa/341635/ |

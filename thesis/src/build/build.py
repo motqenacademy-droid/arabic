@@ -138,6 +138,10 @@ def dedupe_tarajim(text):
 ORD = {"الأول": "1", "الثاني": "2", "الثالث": "3", "الرابع": "4", "الخامس": "5"}
 def bib_key(e):
     m = re.search(r"\*\*(.+?)\*\*", e)
+    u = re.search(r"https?://[^\s،,)\]]+", e)
+    if u:
+        url = re.sub(r"^https?://(www\.)?", "", u.group(0)).rstrip("/.").lower()
+        return ("URL", url, ""), ""
     if not m or "http" in e:
         return ("RAW", re.sub(r"[^\u0621-\u064Aa-zA-Z0-9]", "", norm(e)), ""), ""
     title = norm(m.group(1))

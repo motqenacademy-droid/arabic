@@ -273,7 +273,18 @@ def main():
             e = ln[2:].strip()
             if "القرآن الكريم" == re.sub(r"[*.]", "", e).strip(): continue
             raw.append(e)
+    tb = f"{D}/tarajim_biblio.md"
+    if os.path.exists(tb):
+        raw += [l.strip()[2:] for l in open(tb, encoding="utf-8") if l.startswith("- ")]
     entries = dedupe_biblio(raw)
+    def cited(e):
+        u = re.search(r"https?://[^\s،,)\]]+", e)
+        if not u: return True
+        key = re.sub(r"^https?://(www\.)?", "", u.group(0)).rstrip("/.")
+        return key in text
+    before = len(entries)
+    entries = [e for e in entries if cited(e)]
+    print("web entries dropped (not cited):", before - len(entries))
     web = [e for e in entries if "http" in e]
     books = [e for e in entries if "http" not in e]
     bib = [PB, "## رابعًا: فهرس المصادر والمراجع\n", "**القرآن الكريم.**\n", "### أولًا: الكتب والرسائل والبحوث والقوانين\n"]

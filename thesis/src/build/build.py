@@ -105,10 +105,76 @@ def read_tables(pid):
 def tokens(s):
     return [t for t in re.findall(r"[ء-ي٠-٩\w]+", norm(s))]
 
+TARAJIM = []
+TAG = re.compile(r"^\[\^([^\]]+)\]:\s*\{ترجمة:\s*([^}]+)\}\s*", re.M)
+def dedupe_tarajim(text):
+    defs = {m.group(1): norm(m.group(2)).strip() for m in TAG.finditer(text)}
+    disp = {m.group(1): m.group(2).strip() for m in TAG.finditer(text)}
+    if not defs:
+        return text
+    # order of first reference in the body
+    seen, drop = set(), set()
+    for m in re.finditer(r"\[\^([^\]]+)\](?!:)", text):
+        fid = m.group(1)
+        if fid in defs:
+            if defs[fid] in seen:
+                drop.add(fid)
+            else:
+                seen.add(defs[fid])
+                TARAJIM.append([disp[fid], fid, None])
+    for fid in drop:
+        text = re.sub(r"(?m)^\[\^" + re.escape(fid) + r"\]:.*\n?", "", text)
+        text = text.replace(f"[^{fid}]", "")
+    text = TAG.sub(lambda m: f"[^{m.group(1)}]: ", text)
+    for i, t in enumerate(TARAJIM, 1):
+        name = f"t_{i:03d}"
+        pos = text.find(f"[^{t[1]}]")
+        if pos >= 0 and text[pos + len(t[1]) + 3:pos + len(t[1]) + 4] != ":":
+            text = text[:pos] + bm(name) + text[pos:]
+            t[2] = name
+    print("tarajim kept", len(seen), "dropped duplicates", len(drop))
+    return text
+
+ORD = {"الأول": "1", "الثاني": "2", "الثالث": "3", "الرابع": "4", "الخامس": "5"}
+def bib_key(e):
+    m = re.search(r"\*\*(.+?)\*\*", e)
+    if not m or "http" in e:
+        return ("RAW", re.sub(r"[^\u0621-\u064Aa-zA-Z0-9]", "", norm(e)), ""), ""
+    title = norm(m.group(1))
+    title = re.split(r"[،,(:]| القسم| الجزء", title)[0]
+    title = re.sub(r"[^\u0621-\u064Aa-zA-Z0-9 ]", "", title)
+    title = re.sub(r"\s+", " ", title).strip()
+    author = e[:m.start()] if m else ""
+    author = re.sub(r"\([^)]*\)", "", author)
+    author = norm(re.sub(r"[^\u0621-\u064A ]", " ", author)).split()
+    author = " ".join(author[:1])
+    part = ""
+    pm = re.search(r"(?:ج|الجزء|القسم)\s*(\d|الأول|الثاني|الثالث|الرابع|الخامس)", e)
+    if pm: part = ORD.get(pm.group(1), pm.group(1))
+    # strip part words from title
+    title = re.sub(r"\b(الجزء|القسم|ج)\s*\S*", "", title).strip()
+    ym = re.search(r"\b(1[2-4]\d\d)\s*هـ", e[m.end():] if m else e)
+    year = ym.group(1) if ym else ""
+    return (author, title[:60], part), year
+
+def dedupe_biblio(raw):
+    groups = OrderedDict()
+    for e in raw:
+        k, y = bib_key(e)
+        groups.setdefault(k, OrderedDict()).setdefault(y, []).append(e)
+    out = []
+    for k, byyear in groups.items():
+        years = [y for y in byyear if y]
+        if "" in byyear and len(years) == 1:
+            byyear[years[0]] += byyear.pop("")
+        for y, es in byyear.items():
+            out.append(max(es, key=len))
+    print("biblio raw", len(raw), "->", len(out))
+    return out
+
 def main():
     out = [open(f"{B}/front.md", encoding="utf-8").read(), PB]
     out.append(open(f"{B}/abstract_ar.md", encoding="utf-8").read() + PB if os.path.exists(f"{B}/abstract_ar.md") else "")
-    out.append("# فهرس المحتويات {.unnumbered .unlisted}\n\n```{=openxml}\n<w:p><w:r><w:fldChar w:fldCharType=\"begin\"/></w:r><w:r><w:instrText xml:space=\"preserve\"> TOC \\o \"1-3\" \\h \\z \\u </w:instrText></w:r><w:r><w:fldChar w:fldCharType=\"separate\"/></w:r><w:r><w:t>(انقر بزر الفأرة الأيمن هنا ثم «تحديث الحقل» لإظهار فهرس المحتويات بأرقام الصفحات)</w:t></w:r><w:r><w:fldChar w:fldCharType=\"end\"/></w:r></w:p>\n```\n" + PB)
 
     hadiths = OrderedDict()
     all_body = []
@@ -132,6 +198,7 @@ def main():
 
     # bookmark first occurrence of each hadith in the body
     text = "\n".join(out)
+    text = dedupe_tarajim(text)
     hid = 0
     for k, v in hadiths.items():
         want = k.split()[:4]
@@ -175,20 +242,24 @@ def main():
             if nm in SURA_IDX:
                 vtext.setdefault((SURA_IDX[nm], int(m.group(2))), cells[0])
     idx = [PB, "# الفهارس العامة\n", "## أولًا: فهرس الآيات القرآنية\n",
-           "| م | طرف الآية | السورة | رقمها | الصفحة |", "|--|------------------------------|--------|-----|-----|"]
+           "| م | طرف الآية | السورة | رقمها | الصفحة |", "|-----|----------------------|--------|------|-------|"]
     for n, (key, name) in enumerate(sorted(verse_first.items(), key=lambda kv: (kv[0][0], kv[0][1])), 1):
         si, st, nums = key
         t = vtext.get((si, st), "")
         idx.append(f"| {n} | {t} | {SURAS[si]} | {nums} | {pageref(name)} |")
     idx += ["", PB, "## ثانيًا: فهرس الأحاديث النبوية والآثار\n",
-            "| م | طرف الحديث أو الأثر | الراوي أو القائل | الصفحة |", "|--|------------------------------|-----------|-----|"]
+            "| م | طرف الحديث أو الأثر | الراوي أو القائل | الصفحة |", "|-----|----------------------|----------|-------|"]
     for n, v in enumerate(sorted(hadiths.values(), key=lambda v: sort_key(v[0])), 1):
         pg = pageref(v[2]) if v[2] else "—"
         idx.append(f"| {n} | «{v[0]}» | {v[1]} | {pg} |")
+    idx += ["", PB, "## ثالثًا: فهرس الأعلام المترجم لهم\n",
+            "| م | العَلَم | الصفحة |", "|------|------------------------|--------|"]
+    for n, t in enumerate(sorted(TARAJIM, key=lambda t: sort_key(t[0])), 1):
+        idx.append(f"| {n} | {t[0]} | {pageref(t[2]) if t[2] else '—'} |")
     text += "\n".join(idx) + "\n"
 
     # ---------- bibliography ----------
-    entries, seen = [], set()
+    raw = []
     for pid, _ in PARTS:
         p = f"{D}/{pid}_biblio.md"
         if not os.path.exists(p): continue
@@ -197,15 +268,11 @@ def main():
             if not ln.startswith("- "): continue
             e = ln[2:].strip()
             if "القرآن الكريم" == re.sub(r"[*.]", "", e).strip(): continue
-            k = re.sub(r"[^ء-يa-zA-Z0-9]", "", norm(e))
-            k2 = re.sub(r"\(ت[^)]*\)", "", e)
-            k2 = re.sub(r"[^ء-يa-zA-Z0-9]", "", norm(k2))[:70]
-            if k in seen or k2 in seen: continue
-            seen.add(k); seen.add(k2)
-            entries.append(e)
+            raw.append(e)
+    entries = dedupe_biblio(raw)
     web = [e for e in entries if "http" in e]
     books = [e for e in entries if "http" not in e]
-    bib = [PB, "## ثالثًا: فهرس المصادر والمراجع\n", "**القرآن الكريم.**\n", "### أولًا: الكتب والرسائل والبحوث والقوانين\n"]
+    bib = [PB, "## رابعًا: فهرس المصادر والمراجع\n", "**القرآن الكريم.**\n", "### أولًا: الكتب والرسائل والبحوث والقوانين\n"]
     for n, e in enumerate(sorted(books, key=sort_key), 1):
         bib.append(f"{n}. {e}")
     bib += ["", "### ثانيًا: المواقع الإلكترونية\n"]
@@ -213,6 +280,7 @@ def main():
         bib.append(f"{n}. {e}")
     text += "\n".join(bib) + "\n"
 
+    text += PB + "## خامسًا: فهرس الموضوعات {.unnumbered .unlisted}\n\n```{=openxml}\n<w:p><w:r><w:fldChar w:fldCharType=\"begin\"/></w:r><w:r><w:instrText xml:space=\"preserve\"> TOC \\o \"1-3\" \\h \\z \\u </w:instrText></w:r><w:r><w:fldChar w:fldCharType=\"separate\"/></w:r><w:r><w:t>(انقر بزر الفأرة الأيمن هنا ثم «تحديث الحقل» لإظهار فهرس المحتويات بأرقام الصفحات)</w:t></w:r><w:r><w:fldChar w:fldCharType=\"end\"/></w:r></w:p>\n```\n" 
     if os.path.exists(f"{B}/abstract_en.md"):
         text += PB + open(f"{B}/abstract_en.md", encoding="utf-8").read() + "\n"
 
